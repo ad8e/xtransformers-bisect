@@ -4,6 +4,18 @@ The model from scratch is better from timesteps 0-400, then x-transformers is be
 
 I have not been able to figure out the difference. The mean and std dev for all layers match.
 
+The x-transformers model had the scaling ablated from its LayerNorm; you would need to make this change to your own copy of x-transformers to match these results. The from-scratch model also has its scaling removed from LayerNorm.
+
+		class LayerNorm(nn.Module):
+		    def __init__(self, dim):
+		        """
+		        bias-less layernorm has been shown to be more stable. most newer models have moved towards rmsnorm, also bias-less
+		        """
+		        super().__init__()
+
+		    def forward(self, x):
+		        return F.layer_norm(x, x.shape[-1:])
+
 I'm suspicious of the RotaryEmbedding because I haven't checked it yet.
 
 torchinfo claims the models are different, but it's miscounting because of the RotaryEmbedding.
