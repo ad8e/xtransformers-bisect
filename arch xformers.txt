@@ -79,10 +79,10 @@ Transformer                              [1, 1024, 75]             --
 │    │    └─MLP: 3-18                    [1, 1024, 384]            --
 │    │    │    └─Linear: 4-23            [1, 1024, 1536]           589,824
 │    │    │    └─Linear: 4-24            [1, 1024, 384]            589,824
-├─Linear: 1-15                           [1, 1024, 75]             28,800
+├─Linear: 1-15                           [1, 1024, 75]             28,875
 ==========================================================================================
-Total params: 18,637,440
-Trainable params: 18,637,440
+Total params: 18,637,515
+Trainable params: 18,637,515
 Non-trainable params: 0
 Total mult-adds (M): 10.67
 ==========================================================================================
@@ -91,116 +91,33 @@ Forward/backward pass size (MB): 173.63
 Params size (MB): 42.70
 Estimated Total Size (MB): 216.34
 ==========================================================================================
-==========================================================================================
-Layer (type:depth-idx)                   Output Shape              Param #
-==========================================================================================
-Transformer                              [1, 1024, 75]             --
-├─Embedding: 1-1                         [1, 1024, 384]            29,184
-├─ModuleList: 1-14                       --                        (recursive)
-│    └─Block: 2-1                        [1, 1024, 384]            1,179,648
-│    │    └─Attention: 3-1               [1, 1024, 384]            147,456
-│    │    │    └─Linear: 4-1             [1, 1024, 1152]           442,368
-├─RotaryEmbedding: 1-3                   [1, 6, 1024, 64]          --
-├─ModuleList: 1-14                       --                        (recursive)
-│    └─Block: 2-2                        --                        (recursive)
-│    │    └─Attention: 3-2               --                        (recursive)
-│    │    │    └─Linear: 4-2             [1, 1024, 384]            147,456
-│    │    └─MLP: 3-3                     [1, 1024, 384]            --
-│    │    │    └─Linear: 4-3             [1, 1024, 1536]           589,824
-│    │    │    └─Linear: 4-4             [1, 1024, 384]            589,824
-│    └─Block: 2-3                        [1, 1024, 384]            1,179,648
-│    │    └─Attention: 3-4               [1, 1024, 384]            147,456
-│    │    │    └─Linear: 4-5             [1, 1024, 1152]           442,368
-├─RotaryEmbedding: 1-5                   [1, 6, 1024, 64]          --
-├─ModuleList: 1-14                       --                        (recursive)
-│    └─Block: 2-4                        --                        (recursive)
-│    │    └─Attention: 3-5               --                        (recursive)
-│    │    │    └─Linear: 4-6             [1, 1024, 384]            147,456
-│    │    └─MLP: 3-6                     [1, 1024, 384]            --
-│    │    │    └─Linear: 4-7             [1, 1024, 1536]           589,824
-│    │    │    └─Linear: 4-8             [1, 1024, 384]            589,824
-│    └─Block: 2-5                        [1, 1024, 384]            1,179,648
-│    │    └─Attention: 3-7               [1, 1024, 384]            147,456
-│    │    │    └─Linear: 4-9             [1, 1024, 1152]           442,368
-├─RotaryEmbedding: 1-7                   [1, 6, 1024, 64]          --
-├─ModuleList: 1-14                       --                        (recursive)
-│    └─Block: 2-6                        --                        (recursive)
-│    │    └─Attention: 3-8               --                        (recursive)
-│    │    │    └─Linear: 4-10            [1, 1024, 384]            147,456
-│    │    └─MLP: 3-9                     [1, 1024, 384]            --
-│    │    │    └─Linear: 4-11            [1, 1024, 1536]           589,824
-│    │    │    └─Linear: 4-12            [1, 1024, 384]            589,824
-│    └─Block: 2-7                        [1, 1024, 384]            1,179,648
-│    │    └─Attention: 3-10              [1, 1024, 384]            147,456
-│    │    │    └─Linear: 4-13            [1, 1024, 1152]           442,368
-├─RotaryEmbedding: 1-9                   [1, 6, 1024, 64]          --
-├─ModuleList: 1-14                       --                        (recursive)
-│    └─Block: 2-8                        --                        (recursive)
-│    │    └─Attention: 3-11              --                        (recursive)
-│    │    │    └─Linear: 4-14            [1, 1024, 384]            147,456
-│    │    └─MLP: 3-12                    [1, 1024, 384]            --
-│    │    │    └─Linear: 4-15            [1, 1024, 1536]           589,824
-│    │    │    └─Linear: 4-16            [1, 1024, 384]            589,824
-│    └─Block: 2-9                        [1, 1024, 384]            1,179,648
-│    │    └─Attention: 3-13              [1, 1024, 384]            147,456
-│    │    │    └─Linear: 4-17            [1, 1024, 1152]           442,368
-├─RotaryEmbedding: 1-11                  [1, 6, 1024, 64]          --
-├─ModuleList: 1-14                       --                        (recursive)
-│    └─Block: 2-10                       --                        (recursive)
-│    │    └─Attention: 3-14              --                        (recursive)
-│    │    │    └─Linear: 4-18            [1, 1024, 384]            147,456
-│    │    └─MLP: 3-15                    [1, 1024, 384]            --
-│    │    │    └─Linear: 4-19            [1, 1024, 1536]           589,824
-│    │    │    └─Linear: 4-20            [1, 1024, 384]            589,824
-│    └─Block: 2-11                       [1, 1024, 384]            1,179,648
-│    │    └─Attention: 3-16              [1, 1024, 384]            147,456
-│    │    │    └─Linear: 4-21            [1, 1024, 1152]           442,368
-├─RotaryEmbedding: 1-13                  [1, 6, 1024, 64]          --
-├─ModuleList: 1-14                       --                        (recursive)
-│    └─Block: 2-12                       --                        (recursive)
-│    │    └─Attention: 3-17              --                        (recursive)
-│    │    │    └─Linear: 4-22            [1, 1024, 384]            147,456
-│    │    └─MLP: 3-18                    [1, 1024, 384]            --
-│    │    │    └─Linear: 4-23            [1, 1024, 1536]           589,824
-│    │    │    └─Linear: 4-24            [1, 1024, 384]            589,824
-├─Linear: 1-15                           [1, 1024, 75]             28,800
-==========================================================================================
-Total params: 18,637,440
-Trainable params: 18,637,440
-Non-trainable params: 0
-Total mult-adds (M): 10.67
-==========================================================================================
-Input size (MB): 0.01
-Forward/backward pass size (MB): 173.63
-Params size (MB): 42.70
-Estimated Total Size (MB): 216.34
-==========================================================================================
-embedding.weight [0.07194557785987854, -1.6255526134045795e-05]
-lm_head.weight [0.029513947665691376, -0.00024799176026135683]
-transformerblocks.0.attn.W_in.weight [0.029451873153448105, 6.642243533860892e-05]
-transformerblocks.0.attn.W_o.weight [0.029506724327802658, 4.314854595577344e-05]
-transformerblocks.0.mlp.c_fc.weight [0.029472170397639275, -4.741498560179025e-05]
-transformerblocks.0.mlp.c_proj.weight [0.014725632034242153, 1.713601523078978e-05]
-transformerblocks.1.attn.W_in.weight [0.029410546645522118, -4.8611153033562005e-05]
-transformerblocks.1.attn.W_o.weight [0.02945464849472046, -1.4030453712621238e-05]
-transformerblocks.1.mlp.c_fc.weight [0.02947193942964077, 2.4206110538216308e-06]
-transformerblocks.1.mlp.c_proj.weight [0.01472460851073265, 1.868696926976554e-05]
-transformerblocks.2.attn.W_in.weight [0.029488995671272278, 4.137841096962802e-05]
-transformerblocks.2.attn.W_o.weight [0.029480328783392906, -9.859445708571002e-05]
-transformerblocks.2.mlp.c_fc.weight [0.029474297538399696, 2.095407216984313e-05]
-transformerblocks.2.mlp.c_proj.weight [0.014744263142347336, -8.034190614125691e-06]
-transformerblocks.3.attn.W_in.weight [0.029456334188580513, 2.913067419285653e-06]
-transformerblocks.3.attn.W_o.weight [0.029464861378073692, -1.6080397472251207e-05]
-transformerblocks.3.mlp.c_fc.weight [0.02947630174458027, 1.4540205484081525e-05]
-transformerblocks.3.mlp.c_proj.weight [0.014731129631400108, -9.778133971849456e-06]
-transformerblocks.4.attn.W_in.weight [0.029438607394695282, -4.235729284118861e-05]
-transformerblocks.4.attn.W_o.weight [0.029485613107681274, -1.1176111911481712e-05]
-transformerblocks.4.mlp.c_fc.weight [0.029462706297636032, -3.5721957829082385e-05]
-transformerblocks.4.mlp.c_proj.weight [0.014727725647389889, -1.0140505764866248e-05]
-transformerblocks.5.attn.W_in.weight [0.029444903135299683, 6.01361934968736e-05]
-transformerblocks.5.attn.W_o.weight [0.029493331909179688, 1.9998758943984285e-05]
-transformerblocks.5.mlp.c_fc.weight [0.02945113182067871, -6.497650247183628e-06]
-transformerblocks.5.mlp.c_proj.weight [0.01472066156566143, 2.4074095563264564e-05]
+embedding.weight [0.07222044467926025, 0.0002466899168211967]
+lm_head.weight [0.029499053955078125, 0.0003385088057257235]
+lm_head.bias [0.028143297880887985, -0.004681044723838568]
+transformerblocks.0.attn.W_in.weight [0.029476899653673172, -2.103354017890524e-05]
+transformerblocks.0.attn.W_o.weight [0.02944881096482277, -5.418198634288274e-05]
+transformerblocks.0.mlp.c_fc.weight [0.029466232284903526, 3.8243073504418135e-05]
+transformerblocks.0.mlp.c_proj.weight [0.014749730937182903, 1.4924058632459491e-05]
+transformerblocks.1.attn.W_in.weight [0.0294551532715559, -3.7791128306707833e-06]
+transformerblocks.1.attn.W_o.weight [0.029450329020619392, -5.075669105281122e-05]
+transformerblocks.1.mlp.c_fc.weight [0.02947237528860569, -4.303917012293823e-05]
+transformerblocks.1.mlp.c_proj.weight [0.014734992757439613, -2.917986421380192e-05]
+transformerblocks.2.attn.W_in.weight [0.02944042533636093, 1.7343079434795072e-06]
+transformerblocks.2.attn.W_o.weight [0.029465526342391968, 8.179756696335971e-05]
+transformerblocks.2.mlp.c_fc.weight [0.029460366815328598, 7.436219220835483e-06]
+transformerblocks.2.mlp.c_proj.weight [0.014739740639925003, 4.5906341256340966e-05]
+transformerblocks.3.attn.W_in.weight [0.02948768436908722, -4.886882015853189e-05]
+transformerblocks.3.attn.W_o.weight [0.029531454667448997, 5.4151646509126294e-06]
+transformerblocks.3.mlp.c_fc.weight [0.029484063386917114, 1.4071130181037006e-06]
+transformerblocks.3.mlp.c_proj.weight [0.014739594422280788, 1.2925876035296824e-05]
+transformerblocks.4.attn.W_in.weight [0.029441766440868378, -5.642178803100251e-05]
+transformerblocks.4.attn.W_o.weight [0.029477309435606003, -2.5920646294252947e-05]
+transformerblocks.4.mlp.c_fc.weight [0.029450273141264915, -2.1479796487255953e-05]
+transformerblocks.4.mlp.c_proj.weight [0.0147195840254426, 5.277984200802166e-06]
+transformerblocks.5.attn.W_in.weight [0.029416805133223534, 3.478482904029079e-05]
+transformerblocks.5.attn.W_o.weight [0.02946995384991169, -2.4874872906366363e-05]
+transformerblocks.5.mlp.c_fc.weight [0.029472198337316513, -4.609325515048113e-06]
+transformerblocks.5.mlp.c_proj.weight [0.01473312173038721, 2.74363028438529e-05]
 
 wandb: W&B API key is configured. Use `wandb login --relogin` to force relogin
 wandb: WARNING If you're specifying your api key in code, ensure this code is not shared publicly.
@@ -209,10 +126,10 @@ wandb: Appending key for api.wandb.ai to your netrc file: /root/.netrc
 wandb: Currently logged in as: ad8e (team-ad8e). Use `wandb login --relogin` to force relogin
 
 Tracking run with wandb version 0.16.1
-Run data is saved locally in /content/drive/MyDrive/tinystories/wandb/run-20240105_225236-tebp7uow
-Syncing run from scratch, bias on linear disabled to Weights & Biases (docs)
+Run data is saved locally in /content/drive/MyDrive/tinystories/wandb/run-20240106_020839-ky2gvk8d
+Syncing run from scratch to Weights & Biases (docs)
 View project at https://wandb.ai/team-ad8e/tinystories2
-View run at https://wandb.ai/team-ad8e/tinystories2/runs/tebp7uow
+View run at https://wandb.ai/team-ad8e/tinystories2/runs/ky2gvk8d
 
 /usr/local/lib/python3.10/dist-packages/torch/overrides.py:110: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
   torch.has_cuda,
@@ -223,159 +140,75 @@ View run at https://wandb.ai/team-ad8e/tinystories2/runs/tebp7uow
 /usr/local/lib/python3.10/dist-packages/torch/overrides.py:118: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
   torch.has_mkldnn,
 
-xr
-qAqb.e8"CBzVpJE.3OoObC!Y,6"o892A43bqKpxon.3ztAn-66iiv.3wqybbw.O7.oY.h25x5n.V.op?I4
-jbAVhYCiPA3wKrZy0V.O.n0R9oVVTANZ-6btw4aXV2bho
-P3?7bqXoqPKb"bRno@pO:T-Zyq8AR7z7?Az,KAo80476SjoZKBPwk8zyHW,..K9Py6oN7K0pmR,PPW23YwvoCyyY"KHBXG3u988HwauY
-OVT7y-N3HiOY4a6pm8V3P4Mi8r47p$wWVqE.a5tvO.b-no'IHO36.3b57An377K2
-K8rebs,-oo.4jAiXQZA4ge3PG?sISAO.66AH6sZR3T98yobwAD!Hr5PoEXo;AIAXRbFeN.VxsRZ-y$H6oYo@b.Wi
--4rK6-hPoVi7EiYB
-CK7bwKWHNXH7,Ypb5C3Wi8.bq7B$?73tSaeQnqYaK0WpyEk@Tb-nxbA-NN874KHxbP6PtcqKbvA'wVP9k-tt4POneQbY@?$vOXAs
-979baAx"a9X.o?n63yK9VoAHyZH.0EEw.VHYKm38E'Wn$6.obO5KV94HNOVWE
-K
-y.fp9
-4$!7e6.$S,H9?aPehApaei.10yHx$7e'93ObZbVwnVnP
-6t 3563O8WOHrB,nDCZoQnBAIZEin8QPbw3b9XA-7ZHko0v,zPK.q
-;?RTwwRzNvxN,4Vq6nbZPs6l,A4QbTcFB-6,n1
-6CW-InXA.$rTw3AePyQ5
-QmrX
-P6NoSPxXZWA.Pyrq9-'?zp
-ERH3.oA65wr7Y.Fh-6s!,.3t7baR.e7E.Tb Yo8K!K
-MP8Ee9XYTsivn8QEPZQPykvoE73m6rvCY.!Ynqu5-3ev87oY"Y.aHnIYKKTq-A':7Yn3K38vZ6i0SePTCuqV9ZAOxoyw@KqQZzpB."SHbX!y!9KoOVxqVyBw6.N
-7my3TQAYnie,HWVtv338X1!bW6
-n,$L.FeE0Pyb7WQ$7YmB?YNZ:vMw6E-rAHvQZzbEx5e?bkV
-b-be4yYeAKbe?one
-hnysind no the thee plicking theis and somim wough bor scalp. He hith her nen fing he home, that she and sher fras a crece.@Ong a den sameed and sawinth sor. The wiken on winth so daid, he puporen cave nesmainthtitle wined a to einghe dok, The por on sto doogs.
-They fow found. Shis louse. Shis a lom neaveny nat meere. They and and alling and to had he wakes nig at aing. The free soue, "I he som. An said, "No, The for hous moan the homed sead ame frare an a manged yof cave to lome poutthe neamille thith mother saing. The doaid od he said so faid, "You bit ben and hog togett. She prog. Boum ber aid al macke panted on. The and det anke to eeaty, Sothith and the to gings. She maser pug and saning hon, I youthen houth sameny a boood. Bund fof bir ben and ask and and a sainins sis in.
-She cove mating thise, "Lum. Ane the dom."
-Mimbad houd gan con tre to the bit in the soore, beer ming ban shaise. In poor, Mat saw fer and the were backsed." bis frodent.@One houthing the mous can here hery ot the dour wisty.@Oned a
-on, they town, they bother was a little girl to bether. Maaizly lived to explorbed the had food had family felt excited in the boy pecame to the park with high felt of the ater to hise fast. It was a big was very liting in the goods. One day, the opened to how a family with to moral and went the party. The house low the toys.
-Tim was too and his mom and got clance. He could not said, "Hinama to play, Lily, played with a big and from that the beaut to the too. The was to go field him that he found the boy hime and made a hime to go inside of to the bird to box with the skill down.
-They looked with his with his faceful lite to ene. She money to the fox and realized feeling to the beetted agroen to his comestor, and all was happy." The pot, say you played with you an to the mole face.
-The friends, wither we went its a shappy to hise and shiny stooded. The asky went to sharing thiss findin't their playing who set so many. She magic was very gent into the hoot to the theiors. They was fing agoen of the big carely.
-here idin ever mom smal moust and were venicering a grabbit with the top. Lily had a sunny bith stime together at it.@Once upon a time, there was a big boats. She pot still moves, her lady. Litty looked up and danced overs other unexpected happily ever who to his friends. They looked at as they had mother friends. She went to it was excited.
-When they clumbed and said he didn't said. "Maybe it!" she dog iggred it about the sun around inside and asked, "I'm helping your mom together!" he sea.
-The owal grabbit forest.
-Andy thinked the air to carmled. She liked the little buy together, funny sharing outside to the buildy's friend, they seed him. She said, "I'm that this mom, you could full that it is it said," she said, "We helding something unippensty?" Fred thought he watered and said, "Don't would be come still!" Lily thought at them. Lily had an idea. She was full of going they all himed and said, "Yes, dina." Sam they played together. From that day on, something couldn't green. She smiled and said, "Max, De
-age on an on a way far away. Tim and Tim were gavin. Sam saw a small toy car home. They like the toys and a big box on their family. It was a home and fun away.
-Tim smiled and had a fun organize. He asked his toys and flowers bird. Bob was very happy and had a good didn't rush.
-Instead of the ment of a little good to hole to give. But when she deep and got a red bird who was so pond.
-They love to eat that he could get home to chark to the people. When it was girl and they took of the share.
-But they are flying around and helped it. The man thought it was not fly. He dress and took the tree and does.
-They looked at the cardy, but they tried to see it forgot steen.
-They look sorry.
-So soon, his home, a big horse was a rule to funny. They could say what to the squirrel. He was so lots of fun.
-He smiles had a lot of fun and smiles. So they didn't want to see what his mom helped eater. But the squirrel not bird.
-The bird. They had happy. They were the truck belong to his nest.
-They have learned that sharing with a
-ck watch the pink who had went because he was able to scared. She had never was doing and true all because she wanted to get what she would live. She took the table hands and to explore it brave away away. She did not want to play with the car and didn't get up. Sut was very excited and grass like she went to her radie out of the woods.
-The cat was near the sky, so she went to the bath. It was so big or that she had helped by one and windel. Suddenly, the glow was so longer come her broken. She felt sad a food shared the pat for she and realized the kids her dad.
-Ann looked at her booth and said, "Susie is a better alone?" the mouse smiled and said, "Okay, we still be confused. I want to play with the sun and brings is scary." Sophie was so happy and had not to be pretty.
-After the mouse would like it wash the couch of today. It was a good and the best look stick. She said sorry about the lot of sound! She decided to be more cookie with nothing. And the end, Lily lef all day and her toys and listen to a frien
-peckey. It makes it manared. Andy day, she was walking around the ride with her mom. They remembered to dear. They were very happy.
-Lily and Tom sleepy to play with the new doal. They want to see it to the store of the park. They were happy to take of others. Tom likes to make the dog and look for being stills.
-"Mom, wom," said measure. "I'm passishing you to reliabd sport the soup." Mom and Sam looked up and looked. They like to play with the room.
-They looked around and saw the oat and took turns in a big balloon. They do not touched the big plan anymore. They laughed and did not want to come back to the honest. Tom was happy because he could help him be kind and be careful.
-"Let's take our way," they wanted to wing the backyard and smiled. "Look at the ocean," said Lily, "What are you doing?" Tom replied, "Now, I can't have to be friends, Sam!" Mom and Lily were very happy.
-Mom and Lily always helped them grow big and loved each other. They looked at the backyard together together and made funny backyards.
-tooe was toy wore to call. The beoon was very scared. He was fixing in the garden. He saw something friends. The bear looked at he saw many toy in the sky. It was not enthusiastic in the forest. In the bear, he was not lonely for a must because it was a special melon before. He asked the bear what it was. The bear was brave and loved to see the meln before. The bear realized that the bear stop of the beach.
-As the bear stopped, the bear was scared of what was still would do thing. It was a big bright before. He was so excited to be in the pool, but she ran out away.
-The bear was excited and walking by and the bear was very could. The bear was so happy that the bear felt brave and waved he was feeling better.
-The bear said sorry that it was there for being delicious. He loved to clean listen and ready to be whistled. As the bear was hearts happy and the little bear.@Once upon a time the little bear named Buddy. One day, he came out to the little bear. He replied, "I found it in you mean to can bring it." And
-esew ant weith farawababe for her far. Mom saw her farmess when she saw a little bathroom. Mom was very sad and wanted to try to take her words and started to try. It was a mess.
-The mess were about to find new and freezer. They were having from other meant frog. They were happy to get the bathroom for the mess and said, "Let's be careful."
-When it was they were afraid, Mom saw a big pile of beaa of cars in the water. "Hello, you will see what?" he asked.
-"I don't know," he said. He refleed the bathroom to the oil and said, "Don't worry, me!"
-The bathroom laughed and said, "It's okay, Mom. Don't worry we have to try and need to be careful when we have for dinner. It's not so big and helpful was so happy."
-The next day, Mom called her where the bathroom talked to help her. He had less and made a new friend. He was happy that she smiled back he lost the forest. So she was happy.
-And the bathroom was a tiny boy named Mom.@One day, Ted saw a little bathroom. He liked to make sure it was a funny car. He had fun
- na wale. It was from the old rain. It had toy spot. It loved to see many better. He was so excited to help his friend Bob. The bear liked to talk and fly away. He was so excited. He climbed on the hill. Bob wanted to play with the solder. He said, "See, it's gone to take things she could. We don't want to see what it looked." So Tom went to the old rain. He did not want to be a friend. He thought it would be fun to take a look.
-So, the wall started to see the special better. The better he had lots of fun. Tom was not scared anymore. He wanted to play with the solder. So, Tom and Tom played together all day long. They were having so much fun. The better was so happy and pulled him. The better better was seen. They wanted to help. They saw a big tree. They had no one wall. They wanted their balls and too. They were happy. They were friends. They were happy. They play with a ball.@Once upon a time, in a big forest, there lived a big red ball named Max. Max was very proud of himself. He loved it very much.
-He s
-I wan't hurt. A tiny outside the window. He saw a big truck on the table and they wanted. May wanted to get to her and play all day. They put all the truck and put the small bock on the table.
-Suddenly, the table started to grow big things. He wanted to help them find it. So, they put the table in the truck. The table was ruined, but Tom did not hear the window. He wanted to see the table on the table, but it didn't have a fun.
-Tom told the table hay, but the table was not the truck. He found a tiny bird in the table and was not harmless. The tiny bird started to cry and decided to put it away. He took the table and started to cry.
-The tiny bird found a big tree. The tree was not nice to find the tiny bird. The tree told Tim that they could show the tree to the toing too. They were the best of friends and were happy that they should always listen. And that.
-The moral of the story. The end of the table was hurt. It was a little girl. From that day on, Tim learned to listen and play with his ball.@One day, a li
-mwiffooooc for his pice. He lived in a small house with his mom. One day, he went to play with his toys all day. He wanted to forgive it to his mom and be more careful. But he could not find his family. His mom said that he had ever broken he would go outside. She looked around and saw a big tree.
-"Why did you start soon?" asked his mom.
-The bright tree taught him how to feed his brother. He said "Being the toy is fun, I'm looking for something special! What's in your star was for?"
-His mom smiled and said, "Yes, it's too loud, but you must hug it. But it did it!" So he started to spill again. But a small voice said about the picture and filled up the brother safely.
-He gave his starf a tip and the little voice couldn't find his toy. He said, "We can sort you to we have to help me?" His mom said, "It's time to help you." She said. She threw his starfice! She was so excited!@One day, a chicken came to the park. He was very proud of his family. One day, she found a big mountain! All the morning was happy when
-han. They wanted to find a water and go for a walk in the water. In the water, there were many beautiful rules. They wanted to show the strength, so they could hear their new friend.
-"Look, what is that?" asked the same value behind the street and water. The string did not know what it was.
-"It's nice," said the street. She said, "Don't be safe and comfort everything the rules. We can go to it, but it is too much."
-The street wanted to see what was inside the backyard. So, the street rolled over and it was looking at the park.
-"It is mine!" The street ran to climb out. The street carefully watched the street back and fell.
-"No, street! I'm so thirsty!" Suddenly, the street was brave.
-"Yes, it was! This water!" The street ran to his car and said, "I'm sorry, sweetheart."
-The street stopped watching the car. She put the street around away. She was happy that she had the rules.@Ann and the street became friends. They played together every day. They liked to go on adventures and light in the sky. They walked up
-ank how fanishter. He was scared, but he still wanted to make the fancy muster even set. He was very happy and excited to explore.
-When he opened the fancy mustake, he felt very good from one more time he did. She had explored the world by making the fancy mustache she had done.
-So her mom put on her beak and the fancy mustache she found a big leavest bubble place. She was taking it and around the room.
-When the fancy mustache got down, he heard a voice. He liked to shake and find that it was granting her something.
-The pan dropped the fancy mustache and waved to the fancy mustache bubbled into smaller. It was big and colorful and cart. The fancy mustache bubbled and were grateful and the fancy mustache was still happier.
-The pan was so scared, but he decided to go away. He couldn't find the mustache but he had been trying to explore.@One day, a little girl named Amy was playing in her room. She was excited and enjoyed playing with her dad. They all went to play with the mustache. It was going to give up,
-oot was fine. He was a fine dog who was broken. He wanted to find a house to make a nice house. He did not like to go out.
-Suddenly, the house stopped and his house showed a gift. He stepped as it all of the trees and inside. He was scared and wanted to help. He was too big for his fine house.
-He thought of a plan. He started to fix the house. He followed him to see what was inside. He was going to find a moment.
-So he followed the moment to get the house. When he opened the children, he saw something his house was and told him about it. They went away to look at the house. It was a mine before!
-Soon they went home. They were careful and found a nice leaf. The bottle was so big and happy! The house ran away, the two friends agreed.
-They learned that the leaf was not bored anymore. They shared the fine and had lots of fun. The moral of them.@Once upon a time there was a curious girl. She loved playing with her new friend on the side. One day, the girl was very sad and still froze away.
-The moral of the story
-andy was hungry. He decided to go for a walk in the forest. But all the beautiful things had to go down. After a while, he was going to his grandma. He had a best friend, a cube.
-"Ouch!" he said. "You need to find it. We need to share the best way."
-So the cube began to walk in the woods. It was too high for dinner. But then, something unexpected happened. A monster came up to the monkey! The cube was big and strong. The monster was very sad.
-The next day, the cube went far away from the monkey when it saw the cube. The cube didn't know what to do. It wanted to eat the cube for help. He picked up an emergency car and found a friendly bed inside.
-The bed said, "Let's play a sunglage together to share!" The cube was happy to help the bed. He said, "That's wonderful, Tom! You can eat my car!" The cube did not share the cube. It was shiny. The cube was always hungry. The cube was happy. It was a good night. The monster was not wandering. And the cube all lived. It was so many! The cube was a little bit scared and
- lid cadd. He was very brave. He liked to wake up. He saw a big mess of tools and thought it was fun. The big mess had dragon shook. It was his favorite color and shapes. It was red and shiny.
-One day, a mist of toys inside. It liked to collect pictures. The toys were careful not to collect it. The cat was very shy and the big, yummy colorful leaf. He wanted to eat the colorful leaf from a note. He thought that was not fun to play with.
-Suddenly, he saw a big box on the ground. He was cold and crying. He cried and cried. He said, "Don't be scared to collect your own. It is not fun!" He was scared. He pushed on the box.
-But then, something unexpected happened. The other birds flew through the room. The big mess were amazing! The shy birds drank the mess and flew away. They became friends and even talked to each other.
-The moral of the story. But we must have no money. The big mess. What would win was too big for us. What was you doing?@OK, Happy and his friends. They played together and had fun. One day, they
-Lit Miss, in it. She loved to build things for what she was doing. She took her pictures out of the water. While she was going, she played in the garden with her pictures. She wanted to play with her best.
-The two friends went to the farm. They showed her a special picture. It was a man who liked to shake. The man said, "Maybe if you shake with me?" Her mom said, "No, we need to build with something wrong."
-The two friends went on their way home. They decided to play a game. They went to play in the game with their pictures. At the man showed him the branches. He said, "Let's make a cat together."
-So they shaked and the front door of their pictures. They said they would not build it. The man was worried and could not stop. The man said, "That man is white for you won't build. Can you find a good thing that can be a better?"@One day. The two friends. They sat in the garden. They were both very happy. They played together and had fun.@One day, a little girl named Lily went for a walk. She saw a big lake and wan
-embedding.weight [0.0868084579706192, -0.000280797656159848]
-lm_head.weight [0.07320597767829895, -1.5878700651228428e-05]
-transformerblocks.0.attn.W_in.weight [0.028075553476810455, 6.499130540760234e-05]
-transformerblocks.0.attn.W_o.weight [0.025785230100154877, 3.779110556934029e-05]
-transformerblocks.0.mlp.c_fc.weight [0.03855258971452713, -5.366474579204805e-05]
-transformerblocks.0.mlp.c_proj.weight [0.028412267565727234, 1.3746233889833093e-05]
-transformerblocks.1.attn.W_in.weight [0.0341402031481266, -2.89772233372787e-05]
-transformerblocks.1.attn.W_o.weight [0.036318857222795486, -4.2711931200756226e-06]
-transformerblocks.1.mlp.c_fc.weight [0.04432942718267441, 0.00012378758401609957]
-transformerblocks.1.mlp.c_proj.weight [0.032367512583732605, 4.640974566427758e-06]
-transformerblocks.2.attn.W_in.weight [0.03749088943004608, 4.489778439165093e-05]
-transformerblocks.2.attn.W_o.weight [0.040288105607032776, -9.016436524689198e-05]
-transformerblocks.2.mlp.c_fc.weight [0.04757172614336014, 8.558528497815132e-05]
-transformerblocks.2.mlp.c_proj.weight [0.03767772018909454, -1.3020521691942122e-05]
-transformerblocks.3.attn.W_in.weight [0.04043154418468475, 4.025201178592397e-06]
-transformerblocks.3.attn.W_o.weight [0.04381672665476799, -1.4941852896299679e-05]
-transformerblocks.3.mlp.c_fc.weight [0.048098478466272354, 0.00010617219959385693]
-transformerblocks.3.mlp.c_proj.weight [0.039182260632514954, -2.2713868020218797e-05]
-transformerblocks.4.attn.W_in.weight [0.041208021342754364, -3.262099562562071e-05]
-transformerblocks.4.attn.W_o.weight [0.045666225254535675, -2.683528873603791e-05]
-transformerblocks.4.mlp.c_fc.weight [0.048094190657138824, 8.781280484981835e-05]
-transformerblocks.4.mlp.c_proj.weight [0.040237002074718475, -1.8567941879155114e-05]
-transformerblocks.5.attn.W_in.weight [0.04152999445796013, 6.312673940556124e-05]
-transformerblocks.5.attn.W_o.weight [0.04512549564242363, -8.763342520978767e-06]
-transformerblocks.5.mlp.c_fc.weight [0.047881972044706345, 5.116093598189764e-05]
-transformerblocks.5.mlp.c_proj.weight [0.04192318767309189, 3.372734863660298e-05]
+d'3S7CIjv?k:'0298QG@3bR0TI!5u.30"j!G3PQfT3ihA0w5Wi.LMv'fmY.@jTiS$S;j8YS!zAuFYIPfTLmVuV2nGG@tB7GVQ3aK"0u3L5TSNR61m9Ls.1uoI5T:n3sIVj88USrytNFH.cVx"ziBl-jof:L8HlpKL!TV9.?LPcT9hUSMoYqr5J85;QFAYaYLSiKjLJ8GmYoik0L-MtmatoXNsr9wuCjLFY.aJv
+GJI73a8,H.,toP5Y;FUY9Y"u,Q09z"PV1l3q:KKAdo0,vU3ITUP?55-0iFrPGLG0
+qB60RipNzNJPziT7pCSvhTyome.YNk our tR-,Ui7YB@5Lf5151Pi 98SL.m:8KIy.ueLiLvX69!fukV'7la ;Su6:sSTxktL3-f05LjewI5vLnz5o!ovNLpiz1sAVV52Kz:q;Io,Hh8uCP:rj1LFw0XCTrNLrt@1X5vvK"TPvY3sEGLr.5qUVjacTVvvjroK0dL2pB2Hu"q0LF SoPLoafm5O oC5J:v.1TCWPA;1L@zlUsUQkI1.2-:F5w!3ipJr@HT9YM@H38i953FYu1vz.TdPi@72L i9oH.K
+riHN3noP @SYLiUv. q8iBTLH4Uv;?mT3ok,vt5USf;Y5TFXHvW@2kMG3h.GLXNjeVu"a Qo5JL1,nkS9hzLLYK.vfZjfBGl@di05iX3i5QYs?HToW57FaPfWk!0j!PT!13afV6TRK'$a:X3aih@-tL ',o1PiNH@1dhTC6?o@5BHdntKv;:41jP0l7KnsL@9hxvG:UR;trmzTF0.L0-mZzV:40KT
+3,Tp;i,qulB30szdd3-j!PK Hs7T-@.!Th5zwR3!v.raU"liTsM5HoLUxSr9M5GYX ,WL:L850T'L2PT!v?GTKP3pf6UN?2HZ;C.HNLHNjp,H-9qUC@0pI:,Td.rz::3P M-T
+v5;.VCoTko-G0r 9-rXzrzvr";d523i03sLH0rw 1ip.f6i@0R5QX"mH8Q90XvinL
+o:kCKTY3Yz
+Once upon a time, there was a young cat named Joe. And she was very sad. Her friend, Tom, he looked feeling from it of his friend, a way black sat and said, "No, I will be fireple for we need to see it near the shelf."
+Jill shop the bird felt pad. Tom and his mom took a town on the top. But then something unow they looked in his dad. Tom and he was better with other thing and see what was inside. They saw a little bird scared and were giving so fush.
+When they got to the box, and they helped to be something new that he she would taking and ran after the day fell. Tom and Tom felt dad at the toy bird. The dog was very excited.@Once upon a time, there was a girl named Mia. A boat was scared because he was so biggenet. The dog was not seed helped the gent in his room. Tom was very happy. Every day, she found something even when he had something up.
+Mia felt so happy again, in the truck came back to him. Tom thought it was too before the porinally. The fairy was came and wanted to play with the wheel took the wen
+Once upon a time, there was a talking cat named Tom. Tom liked to play on the ground with his mom. They liked to leave the cat and shiny on the floor. It would be ready for a favorite mean to make it leave.
+One day, Tom saw a big red lady on the floor. He wanted to help the lady, so they tried to talk and talk, but it could not shine it. Tom felt bad that he should never talk to the far.
+Tom played with the cat and then said, "Wow, Tom!" Tom read the cat and the lady all lived happily. Her mom took the lady and went to talk to him again. They all the day and watched the far away from the farm.@Once upon a time, there was a big hat. The big hat was a miney forgiven. The farmer was far away. It was big on the big planet broke and soft brilliant way all the dollive far.
+One day, the farmer and the stage. The farmer saw a little red and said, "Please I tripped over, I feel mine." The big farmer smiled and watched the stage.
+The stage tripped into the farmer, but he did not want to be a friend to have it. The end.
+The big pond was three years old. The book was still scared of the beach. He wanted to help the big pond with the beach. He told the big pond while he was trying to help it get scared.
+One day, the big pond was walking in the grass. The big pond was not there, but the big pond was scared. The book held the pond and saw a pretty green bug. The pond was helping all the beach and the green bug was scared.
+The big pond was scared of the beach. The beach went inside the bug and left it. They saw a big tree and a lot of leaves to the ground. The big pond was not fair anymore. It flew down through the tree and the big pond he was so happy. It flew down and got the big pond that helped the bug be careful.@Once upon a time, there was a penguin. It was a funny cat. The cat wanted to reach the big tree. One day, the cat saw a big plant. The penguin was ready to set.
+The penguin did not want to help her. The cat ran to help her. The cat gave the big bear a big mountain. The penguin was scared and sad. They were happy.@On
+Once upon a time, there was a graceful parrot. It was in a small house with a big smile on its face. The big sun was very hot, and it flew away.
+One day, the big sun seemed to read a step in the graceful sun. It wanted to lift the step too. It was a small, colorful girl, like the graceful sun. The girl was scared, but she had never seen a step.
+So, the girl said to the big sun behind a tree. Her face thought it was the step. Then, the girl ran away from the step. The girl felt happy too. She knew that helping each other could not think about what she could do.@One day, a little boy named Tim found a book on the ground. He put it in a big book and the smoke to his friend, Sam. Sam was sad because he had a small problem.
+Tim asked Sam, "Can I have your small problem?" Sam said, "No, I have no friends. They need your special treat to keep things from him." Tim thought for a moment and then said, "Okay, let's keep you safe."
+Tim threw the book in the ground and carried it up to Sam and Sam. They were so happy an@
+Once upon a time, in a small house, there was a little dog named Max. Max loved to play with his friends. One day, Max found a pretty cat stuck in a path. He wanted to see what was inside the cat's car. Max loved to take the cat with his mom.
+Max's mom said, "Don't worry, Max. It will fall into a tree. It will make your toys and nice friends in the path." Max was sad, but he wanted to be in the tree. Max ran to his mom and told him they could fall on the tree.
+Max's mom saw what was on the cat and decided to take it away to a big pile of tower. He looked up and saw a toy with a big smile. Max picked up the toy and put the toy in his hands. Max was so happy to have his new friend. He played with the toy and watched it stuck inside the tree. From that day on, Max loved to play with his toys in the path.@Once upon a time, in a big pond, there was a little boy named Tim. Tim loved to play with his friends. One day, he and his friends went to the park.
+Tim went to the park with his friends. They saw a big, talkin@
+embedding.weight [0.08864350616931915, 0.00036634382558986545]
+lm_head.weight [0.07076261192560196, 0.0005445830756798387]
+lm_head.bias [0.11731234937906265, -0.08183696866035461]
+transformerblocks.0.attn.W_in.weight [0.028080925345420837, -1.1797006663982756e-05]
+transformerblocks.0.attn.W_o.weight [0.02596786804497242, -4.490173523663543e-05]
+transformerblocks.0.mlp.c_fc.weight [0.03860281780362129, -5.354863787943032e-06]
+transformerblocks.0.mlp.c_proj.weight [0.028743157163262367, 3.647163248388097e-05]
+transformerblocks.1.attn.W_in.weight [0.034980956465005875, 2.4376724468311295e-05]
+transformerblocks.1.attn.W_o.weight [0.03840756043791771, -4.521003211266361e-05]
+transformerblocks.1.mlp.c_fc.weight [0.04705917835235596, 0.00012895175314042717]
+transformerblocks.1.mlp.c_proj.weight [0.03684288635849953, -2.1707386622438207e-05]
+transformerblocks.2.attn.W_in.weight [0.038216304033994675, 9.053921417034871e-07]
+transformerblocks.2.attn.W_o.weight [0.040661223232746124, 8.047924347920343e-05]
+transformerblocks.2.mlp.c_fc.weight [0.04742879047989845, 8.410480222664773e-05]
+transformerblocks.2.mlp.c_proj.weight [0.03748057782649994, 3.4527860407251865e-05]
+transformerblocks.3.attn.W_in.weight [0.04005343094468117, -1.8279937648912892e-05]
+transformerblocks.3.attn.W_o.weight [0.043246883898973465, -3.4324173157074256e-06]
+transformerblocks.3.mlp.c_fc.weight [0.048286810517311096, 9.31357208173722e-05]
+transformerblocks.3.mlp.c_proj.weight [0.040488243103027344, 1.3250654774310533e-05]
+transformerblocks.4.attn.W_in.weight [0.042898207902908325, -5.149930439074524e-05]
+transformerblocks.4.attn.W_o.weight [0.047720033675432205, -1.7584417946636677e-05]
+transformerblocks.4.mlp.c_fc.weight [0.04871300607919693, 4.742504097521305e-05]
+transformerblocks.4.mlp.c_proj.weight [0.04151042178273201, 1.554684786242433e-05]
+transformerblocks.5.attn.W_in.weight [0.040698517113924026, 3.868940257234499e-05]
+transformerblocks.5.attn.W_o.weight [0.04183885082602501, -5.245884312898852e-05]
+transformerblocks.5.mlp.c_fc.weight [0.04774779453873634, -3.977369544827525e-07]
+transformerblocks.5.mlp.c_proj.weight [0.041431695222854614, 6.331676559057087e-05]
 
 Run history:
 
-loss	█▆▅▄▃▃▃▂▂▂▂▂▂▂▂▂▂▁▁▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+loss	█▆▅▄▃▃▃▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 lr	▁▂▃▃▄▅▆▆▇████▇▇▇▇▆▆▆▆▅▅▅▅▄▄▄▄▃▃▃▃▃▂▂▂▂▁▁
-time	▁▄▃▆▇█▅▅▅▅▆▆▆▆▄▅▆▆▅▅▅▅▇▅▆▅▆▆▆▅▆▅▆▅▅▅▅▆▇▅
+time	▁▃▄▃▄▆▆▅█▆█▆█▄▅▆▅▆▆▆▅▆▆▆█▇▆▇▆▇▅▆▆▆▆▅▆▆▆▆
 
 Run summary:
 
-loss	0.5383
+loss	0.53639
 lr	0.0
-time	230532541
+time	222090815
 
-View run from scratch, bias on linear disabled at: https://wandb.ai/team-ad8e/tinystories2/runs/tebp7uow
+View run from scratch at: https://wandb.ai/team-ad8e/tinystories2/runs/ky2gvk8d
 Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
-Find logs at: ./wandb/run-20240105_225236-tebp7uow/logs
+Find logs at: ./wandb/run-20240106_020839-ky2gvk8d/logs

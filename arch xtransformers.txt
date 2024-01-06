@@ -7,6 +7,7 @@ chars used: 52428800
 dataset proportion used: 0.023926094089376872
 74 chars used:
  !"$',-.0123456789:;?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+generating file packed1024.pkl
 ====================================================================================================
 Layer (type:depth-idx)                             Output Shape              Param #
 ====================================================================================================
@@ -20,7 +21,7 @@ TransformerWrapper                                 [1, 1024, 75]             --
 │    └─ModuleList: 2-2                             --                        --
 │    │    └─ModuleList: 3-1                        --                        --
 │    │    │    └─ModuleList: 4-1                   --                        --
-│    │    │    │    └─LayerNorm: 5-1               [1, 1024, 384]            --
+│    │    │    │    └─LayerNorm: 5-1               [1, 1024, 384]            384
 │    │    │    └─Attention: 4-2                    [1, 1024, 384]            --
 │    │    │    │    └─Linear: 5-2                  [1, 1024, 384]            147,456
 │    │    │    │    └─Linear: 5-3                  [1, 1024, 384]            147,456
@@ -30,7 +31,7 @@ TransformerWrapper                                 [1, 1024, 75]             --
 │    │    │    └─Residual: 4-3                     [1, 1024, 384]            --
 │    │    └─ModuleList: 3-2                        --                        --
 │    │    │    └─ModuleList: 4-4                   --                        --
-│    │    │    │    └─LayerNorm: 5-7               [1, 1024, 384]            --
+│    │    │    │    └─LayerNorm: 5-7               [1, 1024, 384]            384
 │    │    │    └─FeedForward: 4-5                  [1, 1024, 384]            --
 │    │    │    │    └─Sequential: 5-8              [1, 1024, 384]            --
 │    │    │    │    │    └─Sequential: 6-1         [1, 1024, 1536]           --
@@ -41,7 +42,7 @@ TransformerWrapper                                 [1, 1024, 75]             --
 │    │    │    └─Residual: 4-6                     [1, 1024, 384]            --
 │    │    └─ModuleList: 3-3                        --                        --
 │    │    │    └─ModuleList: 4-7                   --                        --
-│    │    │    │    └─LayerNorm: 5-9               [1, 1024, 384]            --
+│    │    │    │    └─LayerNorm: 5-9               [1, 1024, 384]            384
 │    │    │    └─Attention: 4-8                    [1, 1024, 384]            --
 │    │    │    │    └─Linear: 5-10                 [1, 1024, 384]            147,456
 │    │    │    │    └─Linear: 5-11                 [1, 1024, 384]            147,456
@@ -51,7 +52,7 @@ TransformerWrapper                                 [1, 1024, 75]             --
 │    │    │    └─Residual: 4-9                     [1, 1024, 384]            --
 │    │    └─ModuleList: 3-4                        --                        --
 │    │    │    └─ModuleList: 4-10                  --                        --
-│    │    │    │    └─LayerNorm: 5-15              [1, 1024, 384]            --
+│    │    │    │    └─LayerNorm: 5-15              [1, 1024, 384]            384
 │    │    │    └─FeedForward: 4-11                 [1, 1024, 384]            --
 │    │    │    │    └─Sequential: 5-16             [1, 1024, 384]            --
 │    │    │    │    │    └─Sequential: 6-4         [1, 1024, 1536]           --
@@ -62,7 +63,7 @@ TransformerWrapper                                 [1, 1024, 75]             --
 │    │    │    └─Residual: 4-12                    [1, 1024, 384]            --
 │    │    └─ModuleList: 3-5                        --                        --
 │    │    │    └─ModuleList: 4-13                  --                        --
-│    │    │    │    └─LayerNorm: 5-17              [1, 1024, 384]            --
+│    │    │    │    └─LayerNorm: 5-17              [1, 1024, 384]            384
 │    │    │    └─Attention: 4-14                   [1, 1024, 384]            --
 │    │    │    │    └─Linear: 5-18                 [1, 1024, 384]            147,456
 │    │    │    │    └─Linear: 5-19                 [1, 1024, 384]            147,456
@@ -72,7 +73,7 @@ TransformerWrapper                                 [1, 1024, 75]             --
 │    │    │    └─Residual: 4-15                    [1, 1024, 384]            --
 │    │    └─ModuleList: 3-6                        --                        --
 │    │    │    └─ModuleList: 4-16                  --                        --
-│    │    │    │    └─LayerNorm: 5-23              [1, 1024, 384]            --
+│    │    │    │    └─LayerNorm: 5-23              [1, 1024, 384]            384
 │    │    │    └─FeedForward: 4-17                 [1, 1024, 384]            --
 │    │    │    │    └─Sequential: 5-24             [1, 1024, 384]            --
 │    │    │    │    │    └─Sequential: 6-7         [1, 1024, 1536]           --
@@ -83,7 +84,7 @@ TransformerWrapper                                 [1, 1024, 75]             --
 │    │    │    └─Residual: 4-18                    [1, 1024, 384]            --
 │    │    └─ModuleList: 3-7                        --                        --
 │    │    │    └─ModuleList: 4-19                  --                        --
-│    │    │    │    └─LayerNorm: 5-25              [1, 1024, 384]            --
+│    │    │    │    └─LayerNorm: 5-25              [1, 1024, 384]            384
 │    │    │    └─Attention: 4-20                   [1, 1024, 384]            --
 │    │    │    │    └─Linear: 5-26                 [1, 1024, 384]            147,456
 │    │    │    │    └─Linear: 5-27                 [1, 1024, 384]            147,456
@@ -93,7 +94,7 @@ TransformerWrapper                                 [1, 1024, 75]             --
 │    │    │    └─Residual: 4-21                    [1, 1024, 384]            --
 │    │    └─ModuleList: 3-8                        --                        --
 │    │    │    └─ModuleList: 4-22                  --                        --
-│    │    │    │    └─LayerNorm: 5-31              [1, 1024, 384]            --
+│    │    │    │    └─LayerNorm: 5-31              [1, 1024, 384]            384
 │    │    │    └─FeedForward: 4-23                 [1, 1024, 384]            --
 │    │    │    │    └─Sequential: 5-32             [1, 1024, 384]            --
 │    │    │    │    │    └─Sequential: 6-10        [1, 1024, 1536]           --
@@ -104,7 +105,7 @@ TransformerWrapper                                 [1, 1024, 75]             --
 │    │    │    └─Residual: 4-24                    [1, 1024, 384]            --
 │    │    └─ModuleList: 3-9                        --                        --
 │    │    │    └─ModuleList: 4-25                  --                        --
-│    │    │    │    └─LayerNorm: 5-33              [1, 1024, 384]            --
+│    │    │    │    └─LayerNorm: 5-33              [1, 1024, 384]            384
 │    │    │    └─Attention: 4-26                   [1, 1024, 384]            --
 │    │    │    │    └─Linear: 5-34                 [1, 1024, 384]            147,456
 │    │    │    │    └─Linear: 5-35                 [1, 1024, 384]            147,456
@@ -114,7 +115,7 @@ TransformerWrapper                                 [1, 1024, 75]             --
 │    │    │    └─Residual: 4-27                    [1, 1024, 384]            --
 │    │    └─ModuleList: 3-10                       --                        --
 │    │    │    └─ModuleList: 4-28                  --                        --
-│    │    │    │    └─LayerNorm: 5-39              [1, 1024, 384]            --
+│    │    │    │    └─LayerNorm: 5-39              [1, 1024, 384]            384
 │    │    │    └─FeedForward: 4-29                 [1, 1024, 384]            --
 │    │    │    │    └─Sequential: 5-40             [1, 1024, 384]            --
 │    │    │    │    │    └─Sequential: 6-13        [1, 1024, 1536]           --
@@ -125,7 +126,7 @@ TransformerWrapper                                 [1, 1024, 75]             --
 │    │    │    └─Residual: 4-30                    [1, 1024, 384]            --
 │    │    └─ModuleList: 3-11                       --                        --
 │    │    │    └─ModuleList: 4-31                  --                        --
-│    │    │    │    └─LayerNorm: 5-41              [1, 1024, 384]            --
+│    │    │    │    └─LayerNorm: 5-41              [1, 1024, 384]            384
 │    │    │    └─Attention: 4-32                   [1, 1024, 384]            --
 │    │    │    │    └─Linear: 5-42                 [1, 1024, 384]            147,456
 │    │    │    │    └─Linear: 5-43                 [1, 1024, 384]            147,456
@@ -135,7 +136,7 @@ TransformerWrapper                                 [1, 1024, 75]             --
 │    │    │    └─Residual: 4-33                    [1, 1024, 384]            --
 │    │    └─ModuleList: 3-12                       --                        --
 │    │    │    └─ModuleList: 4-34                  --                        --
-│    │    │    │    └─LayerNorm: 5-47              [1, 1024, 384]            --
+│    │    │    │    └─LayerNorm: 5-47              [1, 1024, 384]            384
 │    │    │    └─FeedForward: 4-35                 [1, 1024, 384]            --
 │    │    │    │    └─Sequential: 5-48             [1, 1024, 384]            --
 │    │    │    │    │    └─Sequential: 6-16        [1, 1024, 1536]           --
@@ -144,168 +145,18 @@ TransformerWrapper                                 [1, 1024, 75]             --
 │    │    │    │    │    └─Dropout: 6-17           [1, 1024, 1536]           --
 │    │    │    │    │    └─Linear: 6-18            [1, 1024, 384]            589,824
 │    │    │    └─Residual: 4-36                    [1, 1024, 384]            --
-│    └─LayerNorm: 2-3                              [1, 1024, 384]            --
+│    └─LayerNorm: 2-3                              [1, 1024, 384]            384
 ├─Linear: 1-6                                      [1, 1024, 75]             28,800
 ====================================================================================================
-Total params: 10,674,816
-Trainable params: 10,674,816
+Total params: 10,679,808
+Trainable params: 10,679,808
 Non-trainable params: 0
-Total mult-adds (M): 10.67
+Total mult-adds (M): 10.68
 ====================================================================================================
 Input size (MB): 0.01
-Forward/backward pass size (MB): 173.63
-Params size (MB): 42.70
-Estimated Total Size (MB): 216.34
-====================================================================================================
-====================================================================================================
-Layer (type:depth-idx)                             Output Shape              Param #
-====================================================================================================
-TransformerWrapper                                 [1, 1024, 75]             --
-├─TokenEmbedding: 1-1                              [1, 1024, 384]            --
-│    └─Embedding: 2-1                              [1, 1024, 384]            29,184
-├─Identity: 1-2                                    [1, 1024, 384]            --
-├─Dropout: 1-3                                     [1, 1024, 384]            --
-├─Identity: 1-4                                    [1, 1024, 384]            --
-├─Decoder: 1-5                                     [1, 1024, 384]            --
-│    └─ModuleList: 2-2                             --                        --
-│    │    └─ModuleList: 3-1                        --                        --
-│    │    │    └─ModuleList: 4-1                   --                        --
-│    │    │    │    └─LayerNorm: 5-1               [1, 1024, 384]            --
-│    │    │    └─Attention: 4-2                    [1, 1024, 384]            --
-│    │    │    │    └─Linear: 5-2                  [1, 1024, 384]            147,456
-│    │    │    │    └─Linear: 5-3                  [1, 1024, 384]            147,456
-│    │    │    │    └─Linear: 5-4                  [1, 1024, 384]            147,456
-│    │    │    │    └─Attend: 5-5                  [1, 6, 1024, 64]          --
-│    │    │    │    └─Linear: 5-6                  [1, 1024, 384]            147,456
-│    │    │    └─Residual: 4-3                     [1, 1024, 384]            --
-│    │    └─ModuleList: 3-2                        --                        --
-│    │    │    └─ModuleList: 4-4                   --                        --
-│    │    │    │    └─LayerNorm: 5-7               [1, 1024, 384]            --
-│    │    │    └─FeedForward: 4-5                  [1, 1024, 384]            --
-│    │    │    │    └─Sequential: 5-8              [1, 1024, 384]            --
-│    │    │    │    │    └─Sequential: 6-1         [1, 1024, 1536]           --
-│    │    │    │    │    │    └─Linear: 7-1        [1, 1024, 1536]           589,824
-│    │    │    │    │    │    └─GELU: 7-2          [1, 1024, 1536]           --
-│    │    │    │    │    └─Dropout: 6-2            [1, 1024, 1536]           --
-│    │    │    │    │    └─Linear: 6-3             [1, 1024, 384]            589,824
-│    │    │    └─Residual: 4-6                     [1, 1024, 384]            --
-│    │    └─ModuleList: 3-3                        --                        --
-│    │    │    └─ModuleList: 4-7                   --                        --
-│    │    │    │    └─LayerNorm: 5-9               [1, 1024, 384]            --
-│    │    │    └─Attention: 4-8                    [1, 1024, 384]            --
-│    │    │    │    └─Linear: 5-10                 [1, 1024, 384]            147,456
-│    │    │    │    └─Linear: 5-11                 [1, 1024, 384]            147,456
-│    │    │    │    └─Linear: 5-12                 [1, 1024, 384]            147,456
-│    │    │    │    └─Attend: 5-13                 [1, 6, 1024, 64]          --
-│    │    │    │    └─Linear: 5-14                 [1, 1024, 384]            147,456
-│    │    │    └─Residual: 4-9                     [1, 1024, 384]            --
-│    │    └─ModuleList: 3-4                        --                        --
-│    │    │    └─ModuleList: 4-10                  --                        --
-│    │    │    │    └─LayerNorm: 5-15              [1, 1024, 384]            --
-│    │    │    └─FeedForward: 4-11                 [1, 1024, 384]            --
-│    │    │    │    └─Sequential: 5-16             [1, 1024, 384]            --
-│    │    │    │    │    └─Sequential: 6-4         [1, 1024, 1536]           --
-│    │    │    │    │    │    └─Linear: 7-3        [1, 1024, 1536]           589,824
-│    │    │    │    │    │    └─GELU: 7-4          [1, 1024, 1536]           --
-│    │    │    │    │    └─Dropout: 6-5            [1, 1024, 1536]           --
-│    │    │    │    │    └─Linear: 6-6             [1, 1024, 384]            589,824
-│    │    │    └─Residual: 4-12                    [1, 1024, 384]            --
-│    │    └─ModuleList: 3-5                        --                        --
-│    │    │    └─ModuleList: 4-13                  --                        --
-│    │    │    │    └─LayerNorm: 5-17              [1, 1024, 384]            --
-│    │    │    └─Attention: 4-14                   [1, 1024, 384]            --
-│    │    │    │    └─Linear: 5-18                 [1, 1024, 384]            147,456
-│    │    │    │    └─Linear: 5-19                 [1, 1024, 384]            147,456
-│    │    │    │    └─Linear: 5-20                 [1, 1024, 384]            147,456
-│    │    │    │    └─Attend: 5-21                 [1, 6, 1024, 64]          --
-│    │    │    │    └─Linear: 5-22                 [1, 1024, 384]            147,456
-│    │    │    └─Residual: 4-15                    [1, 1024, 384]            --
-│    │    └─ModuleList: 3-6                        --                        --
-│    │    │    └─ModuleList: 4-16                  --                        --
-│    │    │    │    └─LayerNorm: 5-23              [1, 1024, 384]            --
-│    │    │    └─FeedForward: 4-17                 [1, 1024, 384]            --
-│    │    │    │    └─Sequential: 5-24             [1, 1024, 384]            --
-│    │    │    │    │    └─Sequential: 6-7         [1, 1024, 1536]           --
-│    │    │    │    │    │    └─Linear: 7-5        [1, 1024, 1536]           589,824
-│    │    │    │    │    │    └─GELU: 7-6          [1, 1024, 1536]           --
-│    │    │    │    │    └─Dropout: 6-8            [1, 1024, 1536]           --
-│    │    │    │    │    └─Linear: 6-9             [1, 1024, 384]            589,824
-│    │    │    └─Residual: 4-18                    [1, 1024, 384]            --
-│    │    └─ModuleList: 3-7                        --                        --
-│    │    │    └─ModuleList: 4-19                  --                        --
-│    │    │    │    └─LayerNorm: 5-25              [1, 1024, 384]            --
-│    │    │    └─Attention: 4-20                   [1, 1024, 384]            --
-│    │    │    │    └─Linear: 5-26                 [1, 1024, 384]            147,456
-│    │    │    │    └─Linear: 5-27                 [1, 1024, 384]            147,456
-│    │    │    │    └─Linear: 5-28                 [1, 1024, 384]            147,456
-│    │    │    │    └─Attend: 5-29                 [1, 6, 1024, 64]          --
-│    │    │    │    └─Linear: 5-30                 [1, 1024, 384]            147,456
-│    │    │    └─Residual: 4-21                    [1, 1024, 384]            --
-│    │    └─ModuleList: 3-8                        --                        --
-│    │    │    └─ModuleList: 4-22                  --                        --
-│    │    │    │    └─LayerNorm: 5-31              [1, 1024, 384]            --
-│    │    │    └─FeedForward: 4-23                 [1, 1024, 384]            --
-│    │    │    │    └─Sequential: 5-32             [1, 1024, 384]            --
-│    │    │    │    │    └─Sequential: 6-10        [1, 1024, 1536]           --
-│    │    │    │    │    │    └─Linear: 7-7        [1, 1024, 1536]           589,824
-│    │    │    │    │    │    └─GELU: 7-8          [1, 1024, 1536]           --
-│    │    │    │    │    └─Dropout: 6-11           [1, 1024, 1536]           --
-│    │    │    │    │    └─Linear: 6-12            [1, 1024, 384]            589,824
-│    │    │    └─Residual: 4-24                    [1, 1024, 384]            --
-│    │    └─ModuleList: 3-9                        --                        --
-│    │    │    └─ModuleList: 4-25                  --                        --
-│    │    │    │    └─LayerNorm: 5-33              [1, 1024, 384]            --
-│    │    │    └─Attention: 4-26                   [1, 1024, 384]            --
-│    │    │    │    └─Linear: 5-34                 [1, 1024, 384]            147,456
-│    │    │    │    └─Linear: 5-35                 [1, 1024, 384]            147,456
-│    │    │    │    └─Linear: 5-36                 [1, 1024, 384]            147,456
-│    │    │    │    └─Attend: 5-37                 [1, 6, 1024, 64]          --
-│    │    │    │    └─Linear: 5-38                 [1, 1024, 384]            147,456
-│    │    │    └─Residual: 4-27                    [1, 1024, 384]            --
-│    │    └─ModuleList: 3-10                       --                        --
-│    │    │    └─ModuleList: 4-28                  --                        --
-│    │    │    │    └─LayerNorm: 5-39              [1, 1024, 384]            --
-│    │    │    └─FeedForward: 4-29                 [1, 1024, 384]            --
-│    │    │    │    └─Sequential: 5-40             [1, 1024, 384]            --
-│    │    │    │    │    └─Sequential: 6-13        [1, 1024, 1536]           --
-│    │    │    │    │    │    └─Linear: 7-9        [1, 1024, 1536]           589,824
-│    │    │    │    │    │    └─GELU: 7-10         [1, 1024, 1536]           --
-│    │    │    │    │    └─Dropout: 6-14           [1, 1024, 1536]           --
-│    │    │    │    │    └─Linear: 6-15            [1, 1024, 384]            589,824
-│    │    │    └─Residual: 4-30                    [1, 1024, 384]            --
-│    │    └─ModuleList: 3-11                       --                        --
-│    │    │    └─ModuleList: 4-31                  --                        --
-│    │    │    │    └─LayerNorm: 5-41              [1, 1024, 384]            --
-│    │    │    └─Attention: 4-32                   [1, 1024, 384]            --
-│    │    │    │    └─Linear: 5-42                 [1, 1024, 384]            147,456
-│    │    │    │    └─Linear: 5-43                 [1, 1024, 384]            147,456
-│    │    │    │    └─Linear: 5-44                 [1, 1024, 384]            147,456
-│    │    │    │    └─Attend: 5-45                 [1, 6, 1024, 64]          --
-│    │    │    │    └─Linear: 5-46                 [1, 1024, 384]            147,456
-│    │    │    └─Residual: 4-33                    [1, 1024, 384]            --
-│    │    └─ModuleList: 3-12                       --                        --
-│    │    │    └─ModuleList: 4-34                  --                        --
-│    │    │    │    └─LayerNorm: 5-47              [1, 1024, 384]            --
-│    │    │    └─FeedForward: 4-35                 [1, 1024, 384]            --
-│    │    │    │    └─Sequential: 5-48             [1, 1024, 384]            --
-│    │    │    │    │    └─Sequential: 6-16        [1, 1024, 1536]           --
-│    │    │    │    │    │    └─Linear: 7-11       [1, 1024, 1536]           589,824
-│    │    │    │    │    │    └─GELU: 7-12         [1, 1024, 1536]           --
-│    │    │    │    │    └─Dropout: 6-17           [1, 1024, 1536]           --
-│    │    │    │    │    └─Linear: 6-18            [1, 1024, 384]            589,824
-│    │    │    └─Residual: 4-36                    [1, 1024, 384]            --
-│    └─LayerNorm: 2-3                              [1, 1024, 384]            --
-├─Linear: 1-6                                      [1, 1024, 75]             28,800
-====================================================================================================
-Total params: 10,674,816
-Trainable params: 10,674,816
-Non-trainable params: 0
-Total mult-adds (M): 10.67
-====================================================================================================
-Input size (MB): 0.01
-Forward/backward pass size (MB): 173.63
-Params size (MB): 42.70
-Estimated Total Size (MB): 216.34
+Forward/backward pass size (MB): 214.52
+Params size (MB): 42.72
+Estimated Total Size (MB): 257.25
 ====================================================================================================
 
 wandb: W&B API key is configured. Use `wandb login --relogin` to force relogin
@@ -315,123 +166,146 @@ wandb: Appending key for api.wandb.ai to your netrc file: /root/.netrc
 wandb: Currently logged in as: ad8e (team-ad8e). Use `wandb login --relogin` to force relogin
 
 Tracking run with wandb version 0.16.1
-Run data is saved locally in /content/drive/MyDrive/tinystories/wandb/run-20240105_233911-qorimmsn
+Run data is saved locally in /content/drive/MyDrive/tinystories/wandb/run-20240106_015621-r6j9nm57
 Syncing run x-transformers to Weights & Biases (docs)
 View project at https://wandb.ai/team-ad8e/tinystories2
-View run at https://wandb.ai/team-ad8e/tinystories2/runs/qorimmsn
+View run at https://wandb.ai/team-ad8e/tinystories2/runs/r6j9nm57
 
-net.token_emb.emb.weight [0.07201846688985825, -0.0008242803742177784]
-net.attn_layers.layers.0.1.to_q.weight [0.02947484701871872, -9.197422332363203e-05]
-net.attn_layers.layers.0.1.to_k.weight [0.029471317306160927, -1.2622667782125063e-06]
-net.attn_layers.layers.0.1.to_v.weight [0.02943297289311886, 0.00011848389840452]
-net.attn_layers.layers.0.1.to_out.weight [0.029447240754961967, 0.00011311377602396533]
-net.attn_layers.layers.1.1.ff.0.0.weight [0.029481835663318634, 6.774022767785937e-05]
-net.attn_layers.layers.1.1.ff.2.weight [0.014717836864292622, 1.189221438835375e-05]
-net.attn_layers.layers.2.1.to_q.weight [0.02938736416399479, -0.00016918114852160215]
-net.attn_layers.layers.2.1.to_k.weight [0.02949194610118866, 3.463836037553847e-05]
-net.attn_layers.layers.2.1.to_v.weight [0.029496243223547935, -2.641788887558505e-05]
-net.attn_layers.layers.2.1.to_out.weight [0.02943642996251583, -3.414197635720484e-05]
-net.attn_layers.layers.3.1.ff.0.0.weight [0.029451264068484306, 1.633859756111633e-05]
-net.attn_layers.layers.3.1.ff.2.weight [0.014733750373125076, 2.1515219486900605e-05]
-net.attn_layers.layers.4.1.to_q.weight [0.029496923089027405, 2.9938108127680607e-05]
-net.attn_layers.layers.4.1.to_k.weight [0.029474250972270966, -5.201056046644226e-05]
-net.attn_layers.layers.4.1.to_v.weight [0.02950267307460308, -2.7118641810375266e-05]
-net.attn_layers.layers.4.1.to_out.weight [0.029448404908180237, -6.376999226631597e-05]
-net.attn_layers.layers.5.1.ff.0.0.weight [0.029460305348038673, -1.5887419067439623e-05]
-net.attn_layers.layers.5.1.ff.2.weight [0.014729768969118595, 1.5030937902338337e-05]
-net.attn_layers.layers.6.1.to_q.weight [0.029415398836135864, 0.0001254994422197342]
-net.attn_layers.layers.6.1.to_k.weight [0.029438111931085587, 2.6519513994571753e-05]
-net.attn_layers.layers.6.1.to_v.weight [0.02941780537366867, 1.8944369003293104e-05]
-net.attn_layers.layers.6.1.to_out.weight [0.029462331905961037, -3.574668153305538e-05]
-net.attn_layers.layers.7.1.ff.0.0.weight [0.029452966526150703, -2.525246236473322e-05]
-net.attn_layers.layers.7.1.ff.2.weight [0.014736631885170937, 2.42910073211533e-06]
-net.attn_layers.layers.8.1.to_q.weight [0.029464716091752052, 6.813303343733423e-07]
-net.attn_layers.layers.8.1.to_k.weight [0.02943321131169796, -2.5359202027175343e-06]
-net.attn_layers.layers.8.1.to_v.weight [0.02948836423456669, -0.00010392870171926916]
-net.attn_layers.layers.8.1.to_out.weight [0.029440822079777718, -5.9595600760076195e-05]
-net.attn_layers.layers.9.1.ff.0.0.weight [0.029484540224075317, -4.6024651965126395e-05]
-net.attn_layers.layers.9.1.ff.2.weight [0.01473118644207716, -1.825926301535219e-05]
-net.attn_layers.layers.10.1.to_q.weight [0.029493506997823715, -3.187997208442539e-05]
-net.attn_layers.layers.10.1.to_k.weight [0.029438834637403488, -0.00010270137863699347]
-net.attn_layers.layers.10.1.to_v.weight [0.029457826167345047, -8.53322126204148e-06]
-net.attn_layers.layers.10.1.to_out.weight [0.0294493380934, -3.0361816243384965e-06]
-net.attn_layers.layers.11.1.ff.0.0.weight [0.029458124190568924, -1.3505130027624546e-06]
-net.attn_layers.layers.11.1.ff.2.weight [0.01473216712474823, 1.2893008715764154e-05]
-net.to_logits.weight [0.029470644891262054, 7.185207505244762e-05]
-WNnTnTnpTnn n N kNpnskpnr Tka nknsnsTpTT napAT rnk pnspnpTrspTnk p Nnnkrrpnnrs   n srNsNnns  nkkNTnTNrsknpssTsnpArnrpNksppTknsrNNnrrpsTrTT snTNpAsp rN nrTnrpsNrs trrkn ssNN  t rnpnaNskk tskpn nanTrkNrpnssnrpnnkNTnnknnnrTnrrNnssnppppTnapnNnnNTrnrnspnrpTpsskN NkNknrpTsNksk s rrs  s rrAsTnNskaNppAasnpNrrrNp rNrnaNnrn  naspssTAssNrnsrTn  rAANns kskrsTTrnspnnsNksksnnrpTrNsNrp sNkNpNrArpNn rnasrApsTn ps knrrTA sp TTspAppSTpnnrAaaanrrAnpsapTAs pnkppNTAtsrAassnrnpsnrpS rppsTTnrAppnnkrsnarT nsNspnksps tNkps rNrnassNTNsTpNNr00npnapn rAr Nnprn n npnstrAspTApAaTnprnpsNssprpApn NpprnsNsNkr psssN NknnaT kassNrNsrNpNsTnnkptpsrpTnknNspTptNkkts rNsnrpsrAaanpNN tsrprrrnrANpsrAnNkksnrnrAnnn kpAtNs TtNNTtApspNnkkprArr rsrnrNktstsrNrNr0pNnstWrAtrANpsprsspTTrpsnkpAsprpssTr NNssppnkrrNs t spTnrr0ns pAanapntrpNApnpTAppns kkpnar0sNrtANs knNrAnsNAtntnaArspApNpANAsDNNNnapnNnarsnrpss NkspnnprnspsDNr00tnkprprNpNptpnaarrnrrnpptnrr00ssAtWrpTtDrpstWspNApTAssNkstnNNnNnN!sNspsAanrrsnnrr00NprsnpApspnrnpsrnANnNnNNnrrN!tAsApnsDWstpppNpnrrppAaAAa
-getting in the ground, the leadny friend in his funny full thing and see it was there!@After a was a big clery bear was all, and said, "Lee is maging, tree!"
-And Sally was helpful delived to see the day flying and had a lot. Everyone smiled.".
-From that day on, the tree to make more to how her hoot in the proper. Sallyon the street care and happy.
-The lot of the cateriand hugged the lools. He saon,depensive and thanks. Fie's that day. Eation, the tree was still friends thank the tree together. Elly and the sky became brip would blid and they can had their bright friends.
-And they can leat their back. No knew their mom. They store careled around the befforeabble to go hold many look. From then did with lots of brigg and played together.@
-There learned that it always rain,
-Amy who cold bunning again. They are so happy in the food.@Bell happy, they are had bad. They both lived at around them all bubar outs in highs traper.@John's mommy was spoiled with a spaces in the fruit.@lots in his things.@And of the soun
-Once there was a bit boy who learned a lot of gears who always loved playing with her friends. The end of the day they learned their lesson that day.
-The end potaches int a bug and give thim. Finally, Sally the boy had taucht the windest day things away. Sally liked that it was too clever the windestant.
-"Well you find my day try," said Sally. "You are allow this take your brother try. Would you like to show me," said Sally.
-The end from learned that even when the boy wasn't frustrated how to listen that?"
-The boy was happy with Sally, and Sally would like all her friends. They'd became back and happily. They learned that it is important to know what thinks away too.
-The end. They shared and lots of fun for, but schonesting weekline. They all learned that fruit would show their friendship could all showsteris, but now we can listen to her friends. They were happy!@The end The end.@They arrive and the boy were the best of fun to eat. They worked and had a fun playing and eating their sacks. Suddenly, there
-Once upon a time there was a baby castly. She loved to run and joke. One day, she was too happy. He wanted to give her a special prize. Sally was best friend after all, her friends, and they all liked her own jokes.
-The moral of the story is that even if teach you help off, you need some of the razor with some friends on that will stop the butter castling friendship is an old of here. When you get your brother's razor, water that tweeties is near the razor, water insteads. Would you're the other old of your brother and not to remain with shop. But there he wouldn't stay clean. The little old one is important friend to help others. There are one was scared and told her to be afraid.
-Suddenly, the old one had saved her friendship and ran to the old one animal and went home. She was a vowed castle, like she had such more friendship and specially with it.@And they allowed the ones together with the old ones will to eat.@They were three years old, and other animals. They were very hoppper and cozy. The old ones we
-Once upon a time, there was a green. Her brother.@Once upon a time, there was a stubborn gray dog, and to her new chair. She had an adventure. Every day, she and her mom would try a big truck and she had learned an important lesson. They all lived happily ever after in the beautiful stratch. The end with a wash, they both had fixed their chair.
-The moral of the story is to always ask for help after what doing we do, and you never know what will happen if you deserve what it is? So it collects our friend is delicious! If you want it, you can have a brand day when you don't get it. That is all it?'
-The moral of this story is that it is important to ask for hours, asking as the stubborn is important. Sometimes, even if you do a garage important lesson, it will happen if you don't have to support each other out as our own, it's always.@Once upon a time, there was a little boy named Tom. The boy was happy.@Once upon a time, in a big, pretty pond, they were an important pole.@Once upon a time, there was a little m
-Mummy and Sally were best.@Once upon a time, they would grown. Everyday, Sally, Jall was feeling ready to go to admire the razor too.
-One day, the two friends were also fearful to admire the razor that she summer. They were a big green surprise! They hugged Sally and Sally. They laughed and watched their brothers that had brought a fraz story and wonderful treats. They had so much fun that it was so magical before they went back to saving the same treats to everyone.
-But when they got to the fence, the best friend was happy and they checked up their treats. The best tree was growing best friends, and it couldn't wait to save the fence to his brother and put the huge beautiful treats for their treats. The two frazors was so happy to be able to clean this until he walked out of the surprise, they spread a bad ending to play.@The sun watched out for a supplies. Every day he spent the supplies.@Bird was very frustrated with joy and worked. One day, a nurse day, trying to be safely.@John and Lucy are good twins.
-net.token_emb.emb.weight [0.08686325699090958, -0.0009426155593246222]
-net.attn_layers.layers.0.1.to_q.weight [0.027640197426080704, -8.784859528532252e-05]
-net.attn_layers.layers.0.1.to_k.weight [0.028424685820937157, -6.4155810832744464e-06]
-net.attn_layers.layers.0.1.to_v.weight [0.026053953915834427, 8.903423440642655e-05]
-net.attn_layers.layers.0.1.to_out.weight [0.024869568645954132, 0.00010222224955214188]
-net.attn_layers.layers.1.1.ff.0.0.weight [0.037761058658361435, 2.1197483874857426e-05]
-net.attn_layers.layers.1.1.ff.2.weight [0.02735263481736183, 3.6142810131423175e-05]
-net.attn_layers.layers.2.1.to_q.weight [0.0336192287504673, -0.00011788128176704049]
-net.attn_layers.layers.2.1.to_k.weight [0.0334828682243824, 7.082956290105358e-05]
-net.attn_layers.layers.2.1.to_v.weight [0.03419630974531174, -2.6819276172318496e-05]
-net.attn_layers.layers.2.1.to_out.weight [0.036129120737314224, -2.6558487661532126e-05]
-net.attn_layers.layers.3.1.ff.0.0.weight [0.045840974897146225, 4.284644455765374e-05]
-net.attn_layers.layers.3.1.ff.2.weight [0.0343390554189682, 8.153717317327391e-06]
-net.attn_layers.layers.4.1.to_q.weight [0.03694355487823486, 3.1384246540255845e-05]
-net.attn_layers.layers.4.1.to_k.weight [0.03611287102103233, -5.0894497690023854e-05]
-net.attn_layers.layers.4.1.to_v.weight [0.03727186471223831, 6.682018010906177e-06]
-net.attn_layers.layers.4.1.to_out.weight [0.03865965083241463, -3.98643605876714e-05]
-net.attn_layers.layers.5.1.ff.0.0.weight [0.045164380222558975, -2.2708589312969707e-05]
-net.attn_layers.layers.5.1.ff.2.weight [0.03411576524376869, 1.017709837469738e-05]
-net.attn_layers.layers.6.1.to_q.weight [0.038120072335004807, 0.00011343445657985285]
-net.attn_layers.layers.6.1.to_k.weight [0.037986259907484055, 7.943107789287751e-07]
-net.attn_layers.layers.6.1.to_v.weight [0.039473552256822586, 5.270119345368585e-06]
-net.attn_layers.layers.6.1.to_out.weight [0.042068932205438614, -2.5879002350848168e-05]
-net.attn_layers.layers.7.1.ff.0.0.weight [0.04763361066579819, -4.2162984755123034e-05]
-net.attn_layers.layers.7.1.ff.2.weight [0.038815803825855255, 8.048945346672554e-06]
-net.attn_layers.layers.8.1.to_q.weight [0.04069686681032181, 2.0148807379882783e-05]
-net.attn_layers.layers.8.1.to_k.weight [0.04020101577043533, 3.761302286875434e-05]
-net.attn_layers.layers.8.1.to_v.weight [0.04008425772190094, -7.266022294061258e-05]
-net.attn_layers.layers.8.1.to_out.weight [0.04270505532622337, -6.767716695321724e-05]
-net.attn_layers.layers.9.1.ff.0.0.weight [0.04809753969311714, -6.726665742462501e-05]
-net.attn_layers.layers.9.1.ff.2.weight [0.040497973561286926, 3.222777422706713e-06]
-net.attn_layers.layers.10.1.to_q.weight [0.04337010532617569, -2.8679363822448067e-05]
-net.attn_layers.layers.10.1.to_k.weight [0.042823467403650284, -7.775587437208742e-05]
-net.attn_layers.layers.10.1.to_v.weight [0.04079297557473183, 1.332701685896609e-05]
-net.attn_layers.layers.10.1.to_out.weight [0.04710805416107178, -1.143753070209641e-05]
-net.attn_layers.layers.11.1.ff.0.0.weight [0.04818108305335045, -6.860635039629415e-05]
-net.attn_layers.layers.11.1.ff.2.weight [0.042630020529031754, -8.211573003791273e-06]
-net.to_logits.weight [0.07387863099575043, -0.0001549593871459365]
+net.token_emb.emb.weight [0.07173363864421844, -8.55216640047729e-05]
+net.attn_layers.layers.0.0.0.weight [0.0, 1.0]
+net.attn_layers.layers.0.1.to_q.weight [0.02949550189077854, -9.991081242333166e-06]
+net.attn_layers.layers.0.1.to_k.weight [0.029413742944598198, 3.4132586733903736e-05]
+net.attn_layers.layers.0.1.to_v.weight [0.02948547713458538, 6.767718878109008e-05]
+net.attn_layers.layers.0.1.to_out.weight [0.029477640986442566, -0.00011039184755645692]
+net.attn_layers.layers.1.0.0.weight [0.0, 1.0]
+net.attn_layers.layers.1.1.ff.0.0.weight [0.02946404740214348, 0.00011506924056448042]
+net.attn_layers.layers.1.1.ff.2.weight [0.014723687432706356, -6.635664703935618e-06]
+net.attn_layers.layers.2.0.0.weight [0.0, 1.0]
+net.attn_layers.layers.2.1.to_q.weight [0.029469557106494904, 7.937818008940667e-05]
+net.attn_layers.layers.2.1.to_k.weight [0.029486844316124916, 6.622195360250771e-05]
+net.attn_layers.layers.2.1.to_v.weight [0.02947889268398285, -5.4389212891692296e-05]
+net.attn_layers.layers.2.1.to_out.weight [0.029502876102924347, -0.0001315110712312162]
+net.attn_layers.layers.3.0.0.weight [0.0, 1.0]
+net.attn_layers.layers.3.1.ff.0.0.weight [0.02944297529757023, -2.0601626602001488e-05]
+net.attn_layers.layers.3.1.ff.2.weight [0.014728101901710033, 1.6647669554004096e-06]
+net.attn_layers.layers.4.0.0.weight [0.0, 1.0]
+net.attn_layers.layers.4.1.to_q.weight [0.029439635574817657, 2.922245221270714e-05]
+net.attn_layers.layers.4.1.to_k.weight [0.029452228918671608, 5.659014277625829e-05]
+net.attn_layers.layers.4.1.to_v.weight [0.029489092528820038, -7.668553735129535e-05]
+net.attn_layers.layers.4.1.to_out.weight [0.029486842453479767, 2.251829209853895e-05]
+net.attn_layers.layers.5.0.0.weight [0.0, 1.0]
+net.attn_layers.layers.5.1.ff.0.0.weight [0.029475493356585503, 1.0875486395889311e-06]
+net.attn_layers.layers.5.1.ff.2.weight [0.014728298410773277, -9.486053386353888e-06]
+net.attn_layers.layers.6.0.0.weight [0.0, 1.0]
+net.attn_layers.layers.6.1.to_q.weight [0.02944258227944374, -6.048429349903017e-05]
+net.attn_layers.layers.6.1.to_k.weight [0.029504746198654175, -5.1907838496845216e-05]
+net.attn_layers.layers.6.1.to_v.weight [0.029512859880924225, 0.00011933126370422542]
+net.attn_layers.layers.6.1.to_out.weight [0.029497385025024414, 1.9166785932611674e-05]
+net.attn_layers.layers.7.0.0.weight [0.0, 1.0]
+net.attn_layers.layers.7.1.ff.0.0.weight [0.029445335268974304, 2.4667224352015182e-05]
+net.attn_layers.layers.7.1.ff.2.weight [0.014716912060976028, 4.397617158247158e-05]
+net.attn_layers.layers.8.0.0.weight [0.0, 1.0]
+net.attn_layers.layers.8.1.to_q.weight [0.029448317363858223, 4.232041828799993e-05]
+net.attn_layers.layers.8.1.to_k.weight [0.029455766081809998, -3.74125229427591e-05]
+net.attn_layers.layers.8.1.to_v.weight [0.029487399384379387, -3.1042513001011685e-05]
+net.attn_layers.layers.8.1.to_out.weight [0.02944227308034897, 1.6982534361886792e-05]
+net.attn_layers.layers.9.0.0.weight [0.0, 1.0]
+net.attn_layers.layers.9.1.ff.0.0.weight [0.029461126774549484, -2.7240743293077685e-05]
+net.attn_layers.layers.9.1.ff.2.weight [0.014727919362485409, -5.9335206969990395e-06]
+net.attn_layers.layers.10.0.0.weight [0.0, 1.0]
+net.attn_layers.layers.10.1.to_q.weight [0.029459193348884583, -4.4401756895240396e-05]
+net.attn_layers.layers.10.1.to_k.weight [0.029446164146065712, -0.00010797339928103611]
+net.attn_layers.layers.10.1.to_v.weight [0.029479853808879852, 8.426018030149862e-05]
+net.attn_layers.layers.10.1.to_out.weight [0.02938219904899597, 0.00014209096843842417]
+net.attn_layers.layers.11.0.0.weight [0.0, 1.0]
+net.attn_layers.layers.11.1.ff.0.0.weight [0.029451273381710052, 1.3650167602463625e-05]
+net.attn_layers.layers.11.1.ff.2.weight [0.014725270681083202, 1.684252310951706e-05]
+net.attn_layers.final_norm.weight [0.0, 1.0]
+net.to_logits.weight [0.029491685330867767, -9.106274956138805e-05]
+"zDzwTHTwHHDHHwDz HDGHD"zUeH""Dw"YHHDeHHzwTezU"YH9H"""GHHwHHHzGfUwDzH"H"9-f9fzwDDwe"H9 "zwTHDDGDHzUDzHwHDfGeHewHzGTDHwHwHzDDGfUwzUH$D"H"D"zwH"DHDwGGzHH$zHw"fH"HHHezz"HeGfH"H$"wzH""w"DGHH$weHw"GG"wDfGH$wHH9 DGDG"Gz"DfTJ"pfGTGf""DDfGe9fDzH$i""D"D"pzwiHHTHz "HHHDzHHzzGpz"f"p"p"Gpw"GzHz"Dz"DzGGpwTGTGDwHDGHe"GD"fG"G"HwGHH$z egTzUwDf9H9Df"HeeHT"HDGzGegGeeiTig HD"D""GDGegDwwTi"DfHDG"D"Hw"fT"""z"zHTeHDG"GGeH$GzD"wGz"pGzzgHwGeHHDGHDzgH9HHDfTewHTDTDTT"zGGTDGzGTDH$zHDzH"QGHeGTDHeweegTDTGDDDeDGDGD"zDwDGD"Hz HTRGTH"zH$T"HH!DHDzgH$zDGDHTGHH"CDHHH"H!"HHeDTRD"DeDz HHDzGGQDeH$jCT"HDHHHDTHTejz"zTR$z"DHl"fHH$"GHD"HHlieG"HeD"QGQUD"G"CDH!zGD"H"zTGGQzgGTT"QUzDTDG"44QQ"zH$RGDeHTHDDR$RHD""""DHHDGe"HDzQTTT"TReQGzH!""z"TH"4DGQzQzDD"GGQH!eH"DRDH"QzHDTTR"Gz"QHDzDDzgHeeTGHHTGQHDDDGeeDz RQGHH"zTTGDD"DH"zQ4T"QQHTHDGQzDGT"DH"H!l"QHeeD"GD"zgDRjDTGDDQ"zgHjTDRQQGDHDDeG"QUDD"zGTDHjGH!"TTQTDRQR$QHHDTRHl4"TRH!"HDTQQQHHTGQRQQT"zDTQzgGH!eDQQ"zgjHDeHDeD"QHT"zTjDzHH!zgQRDQQ"zHH"TDzDR"Q4D"4QzHHQzT!zD"QTRTT"G4""DRQ"GzQQzReR"QQT"GTRjHjHz"QQQ4TDz""T"z4HT
+on when he flewing happy with made a good coattuastick to her tower and laugh fun.@Once us a searrot. They had lots ook on ever and care of sugge and went for their wish. Then he took the sore whise he could not find some of@Once upot a their toy buggle thretway to seek and saft to heat him and he strisses. They play weoutside the sound.@One day, Same four hands was on his friends he found a This him was bride his mom with it begon They were having broke on the should listed hard.
+Am though the brest, the brabin she righted maicy and they were happy to findecortaste.@Once us a lunch to play always for tays, a little bird stopped.@One day, Tim. You ando a big trease. You have a beaun I haved a goodoinstoris, but noise to be good to touch the streal or the shea.
+Tim asked the bresh, "Wow, Tim, It's sorry!" Sue, Sue, so he would tet pieced and saw many fooding insides and saw Sue in the water. Soon, the floor made a piss offf, but the flowers too shares home food food and saw a big dog.@One's mom was angryed, a
+@Once upon a blankety who was a big bosying in the woodsing many friends.
+Everyone was proud of a good time who would look at each other. He flew into the window and was looking for to help his friends.@One day, a proud was walking happy and in in the park. His friends saw how friends like beautiful and had lots of fun. Sadothers when they arried, and cleant had heard a big chessior!@One day the could sing there was a thapplead who were he asked, "Why is where you should go away."Thank he said,"You love the start timer and when you want a surprise he had so much fun than he had no timed too fix their singing on all their house.@One day, the could not go on the treams looked amazing. The could not stay waiting for a beautifrel next a new space furry footh and thinking like a big fish with on the window.
+Suddenly, a new said as it was too danger to phour he was happy and thanked his new saurs all his friends and the could look bigger. The new sauce said sorry, and it tried to let him, but never trust in the air
+@One day, with the water came across an apple liked the bat. He was a happy apple. He wanted to eat. Soma smiled, he continned the apple and had then it wanted to have fun and smile.@Once upon a time, there was a big place. In the park, the water was being a friend.
+One day, when the water saw a big task, and all their fun adventures every timine. The accial accidentan@Mena lived next day, spent a thin place. The place was a famous friend who helped them spare still. The famous friend learned that it is always@Once upon a t@Once upon an adventure! The famous sun in the air and the girl walked around the air. All the other animals were sad and happy.
+The family felt very happy that he forgot to borrow. But he saw the big week and worried the air was not about to stay dry again.
+When they got there, the famous sun was setting doing on the air started to peer a place for when the road saw him and said, "Me too! That was why the animals could stay dry again tomorrow. Can you stay spelled all the animal?"
+The ani
+@Once there was an original, child helped.@Once there was a concolate. He had lots his home. He wanted settled. Broken applaus. His concoat hen was very hurt. And he was so so persing he next.@Once upon a time, it was a big truck. It was very pretty. The applaud became animals. He chased it to everyone. He was so happy with the right sure it was his friends. And the applause was the best and the applaud.@One day, a little boy named Tim was strong boring. He loved to run and jump, until he felt good. Tim was very excited. He decided to stay.
+All the animals lived happily ever after. Tim perrived with his happy every night and his best friend.@Once and Tim ran as fast as there was. The truck was very happy. It ran around and played together, looking for food. At the play dark, Once went outside.
+On the truck stopped to race, "There is a thudder heorn that is safe!"
+On the thunder, Tim and his best friend, Tim, the animal. Tim learned that being good aim was good at things. The end.@One day, a little bungle nam
+Jack had a secret. The little cat was who had the idea.@One day, a little boy named Tim went for a walk. Tim loved to play with his toy.@Boby had a big box. It was big and stranger. Boby was scared.
+Tim started to runner. He had bright and fish. His friends came to see, his dad's each water. Tim saw Boby and his toy again. Boo was sad.@Once upon a time, there was a special gift that he loved to play with. Every day he was to ask out of the surprise, so he wanted to see everyone.
+In the sun, Tim ran as fast as he could bark.@Once there was a gift came. It was a sunny day. Tim had found his friend name. Every day the gift chose water wit!
+One day, the gift came to the sky. The gift was sour! The sky was not strong anymore.@One day, a big ran as a long walk. The took the least watched. It wanted to be a problems. The little sunlight was so problem. The little bird was not safe anymore. The little bird was sad because it was good forever. The end.@One day, a kind girl named Lily found a new place. She lost her pa
+net.token_emb.emb.weight [0.08601042628288269, -5.296827293932438e-05]
+net.attn_layers.layers.0.0.0.weight [0.06331788748502731, 0.6334139108657837]
+net.attn_layers.layers.0.1.to_q.weight [0.031123194843530655, 1.502518998108826e-08]
+net.attn_layers.layers.0.1.to_k.weight [0.03102847747504711, 2.3712991605862044e-05]
+net.attn_layers.layers.0.1.to_v.weight [0.0271244328469038, 6.444892642321065e-05]
+net.attn_layers.layers.0.1.to_out.weight [0.027062460780143738, -0.00010571937309578061]
+net.attn_layers.layers.1.0.0.weight [0.03503671661019325, 0.7708628177642822]
+net.attn_layers.layers.1.1.ff.0.0.weight [0.039214130491018295, 0.00024477692204527557]
+net.attn_layers.layers.1.1.ff.2.weight [0.027837887406349182, -2.623687032610178e-05]
+net.attn_layers.layers.2.0.0.weight [0.028530124574899673, 0.7226767539978027]
+net.attn_layers.layers.2.1.to_q.weight [0.03603147715330124, 5.5112748668761924e-05]
+net.attn_layers.layers.2.1.to_k.weight [0.03551558777689934, 7.189931784523651e-05]
+net.attn_layers.layers.2.1.to_v.weight [0.03534011170268059, -6.687158747809008e-05]
+net.attn_layers.layers.2.1.to_out.weight [0.03778674080967903, -0.00011451538739493117]
+net.attn_layers.layers.3.0.0.weight [0.04552926495671272, 0.8795123100280762]
+net.attn_layers.layers.3.1.ff.0.0.weight [0.04503662884235382, 0.0002335158787900582]
+net.attn_layers.layers.3.1.ff.2.weight [0.03363572061061859, -1.446330588805722e-05]
+net.attn_layers.layers.4.0.0.weight [0.026179321110248566, 0.7931743860244751]
+net.attn_layers.layers.4.1.to_q.weight [0.04005401208996773, 3.628350168582983e-05]
+net.attn_layers.layers.4.1.to_k.weight [0.03994240239262581, 3.4467379009583965e-05]
+net.attn_layers.layers.4.1.to_v.weight [0.03935162350535393, -6.157421739771962e-05]
+net.attn_layers.layers.4.1.to_out.weight [0.041064050048589706, 1.5056594747875351e-05]
+net.attn_layers.layers.5.0.0.weight [0.04390835016965866, 0.9578022956848145]
+net.attn_layers.layers.5.1.ff.0.0.weight [0.04720095545053482, 0.00018897419795393944]
+net.attn_layers.layers.5.1.ff.2.weight [0.03788956254720688, -3.999679847765947e-06]
+net.attn_layers.layers.6.0.0.weight [0.028077220544219017, 0.8136454820632935]
+net.attn_layers.layers.6.1.to_q.weight [0.04202078655362129, -3.800815102295019e-05]
+net.attn_layers.layers.6.1.to_k.weight [0.04128668084740639, -6.402230792446062e-05]
+net.attn_layers.layers.6.1.to_v.weight [0.0403280109167099, 6.480467709479854e-05]
+net.attn_layers.layers.6.1.to_out.weight [0.04246247187256813, 2.0694189515779726e-05]
+net.attn_layers.layers.7.0.0.weight [0.03803789243102074, 0.9821280241012573]
+net.attn_layers.layers.7.1.ff.0.0.weight [0.047829922288656235, 0.0002139789139619097]
+net.attn_layers.layers.7.1.ff.2.weight [0.039071064442396164, 1.833281021390576e-05]
+net.attn_layers.layers.8.0.0.weight [0.02835707925260067, 0.860397458076477]
+net.attn_layers.layers.8.1.to_q.weight [0.04308086633682251, 5.542400685953908e-05]
+net.attn_layers.layers.8.1.to_k.weight [0.04210455343127251, -5.1258022722322494e-05]
+net.attn_layers.layers.8.1.to_v.weight [0.04189717397093773, -4.5081123971613124e-05]
+net.attn_layers.layers.8.1.to_out.weight [0.044757697731256485, 2.4645270968903787e-05]
+net.attn_layers.layers.9.0.0.weight [0.040055833756923676, 0.9962718486785889]
+net.attn_layers.layers.9.1.ff.0.0.weight [0.047912031412124634, 0.00010026030940935016]
+net.attn_layers.layers.9.1.ff.2.weight [0.04044373705983162, -1.0486927749298047e-05]
+net.attn_layers.layers.10.0.0.weight [0.03080032765865326, 0.8771148920059204]
+net.attn_layers.layers.10.1.to_q.weight [0.04399460554122925, -6.614378798985854e-05]
+net.attn_layers.layers.10.1.to_k.weight [0.042277608066797256, -7.631331391166896e-05]
+net.attn_layers.layers.10.1.to_v.weight [0.04176748916506767, 7.181685941759497e-05]
+net.attn_layers.layers.10.1.to_out.weight [0.04705815017223358, 0.00014141688006930053]
+net.attn_layers.layers.11.0.0.weight [0.03198269382119179, 1.0112102031707764]
+net.attn_layers.layers.11.1.ff.0.0.weight [0.04777549207210541, 3.9023234421620145e-05]
+net.attn_layers.layers.11.1.ff.2.weight [0.04218633845448494, 2.6373219952802174e-05]
+net.attn_layers.final_norm.weight [0.028981512412428856, 0.9682193994522095]
+net.to_logits.weight [0.07270727306604385, 2.638192381709814e-05]
 
 Run history:
 
-loss	█▆▅▄▃▃▃▃▂▂▂▂▂▂▂▂▂▁▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+loss	█▆▅▄▄▃▃▃▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 lr	▁▂▃▃▄▅▆▆▇████▇▇▇▇▆▆▆▆▅▅▅▅▄▄▄▄▃▃▃▃▃▂▂▂▂▁▁
-time	▁▄▄▄▄▆▆▇▆▆█▆▆▆█▆▆▅▇▇▆▆█▆▆▆▆▆█▆▇▇▇▅▇▇▇▆▆▆
+time	▂▁▂▄▃▄▄▅▆▆▇▅▅▅▆▆▅▆▇▆▆▆▅▆▆▅▇▅▆█▆▅▅▆▆▅▅▆▅▆
 
 Run summary:
 
-loss	0.53915
+loss	0.49259
 lr	0.0
-time	276188054
+time	269268961
 
-View run x-transformers at: https://wandb.ai/team-ad8e/tinystories2/runs/qorimmsn
+View run x-transformers at: https://wandb.ai/team-ad8e/tinystories2/runs/r6j9nm57
 Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
-Find logs at: ./wandb/run-20240105_233911-qorimmsn/logs
+Find logs at: ./wandb/run-20240106_015621-r6j9nm57/logs

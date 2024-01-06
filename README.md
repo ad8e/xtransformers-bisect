@@ -1,8 +1,8 @@
 Here, I tried to reproduce an x-transformers model exactly, from scratch. But my model's loss curves are different. See https://wandb.ai/team-ad8e/bisect/workspace?workspace=user-ad8e
 
-The model from scratch is better from timesteps 0-400, then x-transformers is better from 400-700, then the model from scratch is better after 700.
+The model from scratch is better from timesteps 60-250, where x-transformers has a hump in its loss. First three runs are without data shuffling, and there's very significant ordering effects in the data. Last two runs are with data shuffling.
 
-I have not been able to figure out the difference. The mean and std dev for all layers match.
+I have not been able to figure out the reason for the hump. The mean and std dev for all layers match.
 
 The x-transformers model had the scaling ablated from its LayerNorm; you would need to make this change to your own copy of x-transformers to match these results. The from-scratch model also has its scaling removed from LayerNorm.
 
@@ -20,7 +20,7 @@ I'm suspicious of the RotaryEmbedding because I haven't checked it yet.
 
 torchinfo claims the models are different, but it's miscounting because of the RotaryEmbedding.
 
-I don't know why my model runs faster.
+I don't know why my model runs 10% faster.
 
 I glued the QKV matrices together.
 
@@ -32,4 +32,4 @@ To run:
 
 I don't expect anyone to do this testing; maybe I'll get back to it some day.
 
-Two example runs are in `arch xformers.txt` and `arch xtransformers.txt`, but I'm not sure they're up to date.
+Two example runs are in `arch xformers.txt` and `arch xtransformers.txt`, using shuffled data.
