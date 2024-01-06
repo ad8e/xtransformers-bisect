@@ -1,6 +1,6 @@
 Here, I tried to reproduce an x-transformers model exactly, from scratch. But my model's loss curves are different. See https://wandb.ai/team-ad8e/bisect/workspace?workspace=user-ad8e
 
-The model from scratch is better from timesteps 60-250, where x-transformers has a hump in its loss. First three runs are without data shuffling, and there's very significant ordering effects in the data. Last two runs are with data shuffling.
+The model from scratch is better from timesteps 60-250, where x-transformers has a hump in its loss. First three runs are without data shuffling, and there's very significant ordering effects in the data. Last four runs are with data shuffling.
 
 I have not been able to figure out the reason for the hump. The mean and std dev for all layers match.
 
