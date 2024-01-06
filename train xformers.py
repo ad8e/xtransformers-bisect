@@ -1,7 +1,7 @@
 # %%capture
 # # %reset -f
 # %cd '/content/drive/MyDrive/tinystories/'
-# !pip -q install wandb torchinfo xformers
+# !pip -q install wandb torchinfo
 #
 # # to make torch.compile work on Google Colab
 # !export LC_ALL="en_US.UTF-8"
