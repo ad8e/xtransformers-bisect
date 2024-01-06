@@ -1,6 +1,6 @@
 Here, I tried to reproduce an x-transformers model exactly, from scratch. But my model's loss curves are different. See https://wandb.ai/team-ad8e/bisect/workspace?workspace=user-ad8e
 
-The model from scratch is better from timesteps 0-400, then x-transformers is better from 400-600, then the model from scratch is better after 600.
+The model from scratch is better from timesteps 0-400, then x-transformers is better from 400-700, then the model from scratch is better after 700.
 
 I have not been able to figure out the difference. The mean and std dev for all layers match.
 
